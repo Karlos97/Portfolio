@@ -1,32 +1,128 @@
-.header{
-    height: 95vh;
-    background-color: $background-color;
-    // background-image: linear-gradient(
-    //     to right bottom,
-    //     rgba(green 0.8),
-    //     rgba(red, 0.8)),
-    // url(../../img/rysyMorning.jpg);
+.header {
+  height: 95vh;
+  background-color: $background-color;
 
-    // background-size: cover;
-    // background-position: top;
-    // position: relative;
+  &__bg--gif {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    overflow: hidden;
+  }
+  &__logo-KM {
+    position: absolute;
+    top: 10rem;
+    left: 28rem;
+    height: 6rem;
+    // filter: invert(96%) sepia(57%) saturate(86%) hue-rotate(9deg)
+    //   brightness(106%) contrast(24%);
+    // fill: $color-white-grey-1;
+    // &:hover {
+    //   @include svgHover;
+    // }
+    // --handle-color: #c13127;
+  }
+  &__logo-KM1 {
+    position: absolute;
+    top: 10rem;
+    left: 38rem;
+    height: 5rem;
+  }
+
+  &__box {
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    .heading-primary {
+     // @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+      // html, body{
+      //   font-family: 'Roboto Mono', monospace;
+      //   background: #212121;
+      //   height: 100%;}
+      .container {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+        .text {
+          font-weight: 100;
+          font-size: 28px;
+          color: #fafafa;
+        }
+        .dud {
+          color: #757575;
+        }
 
 
-// &-img{
-    // height: 100%;
-    // width: 100%;
-    // background-image: 
-    // linear-gradient(
-    //     to right bottom,
-    //     rgba(#e6e6ea, 0.3),
-    //     rgba(#f4f4f8, 0.1)),
-// url(../../img/code.jpg);
-// filter: blur(2px);
-// -webkit-filter: blur(8px);
-    // transform: scale(1.9);
-    // background-color: rgba(0,0,0, 0.4); 
-    // background-size: cover;
-    // background-position: top;
-    // position: relative;
-// }
+      &--main {
+        // position: absolute;
+        //       left: 2rem;
+      }
+      &--sub {
+        // position: absolute;
+        // top: 2rem;
+        // left: 2rem;
+      }
+    }
+  }
+ 
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba(green 0.8),
+  //     rgba(red, 0.8)),
+  // url(../../img/rysyMorning.jpg);
+
+  // background-size: cover;
+  // background-position: top;
+  // position: relative;
+
+  // &-img{
+  // height: 100%;
+  // width: 100%;
+  // background-image:
+  // linear-gradient(
+  //     to right bottom,
+  //     rgba(#e6e6ea, 0.3),
+  //     rgba(#f4f4f8, 0.1)),
+  // url(../../img/code.jpg);
+  // filter: blur(2px);
+  // -webkit-filter: blur(8px);
+  // transform: scale(1.9);
+  // background-color: rgba(0,0,0, 0.4);
+  // background-size: cover;
+  // background-position: top;
+  // position: relative;
+  // }
 }
+// @mixin icon-colors($fallback: black) {
+//     fill: $fallback;
+//     @content;
+//   }
+
+//   .icon--color {
+//       width:200px;
+//       height:200px;
+//     //   @include icon-colors(#ef5b49) {
+//         --handle-color: #c13127;
+//         --cup-color: #ef5b49;
+//         --smoke-color: #cacaea;
+//       }
+
+//   .icon {
+//     display: inline-block;
+//     width: 70px;
+//     height: 70px;
+//     background-size: cover;
+//   }
+//   .icon-bike {
+//       fill: black;
+//     background-image: url("../../img/KMlogo.svg");
+//     --handle-color: white;
+//   }
+//   .icon-bike:hover,
+//   .icon-bike:focus {
+//     // background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-red.svg);
+//   }
