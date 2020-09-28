@@ -70,7 +70,8 @@ const phrases = [
   "Cześć.",
   "Nazywam sie Karol Minta.",
   "Jestem Front-End developerem.",
-  "Więcej informacji o mnie oraz projekty znajdziesz poniżej.",
+  "Więcej informacji o mnie oraz",
+  "projekty znajdziesz poniżej.",
 ];
 // let textNumb = 1;
 const el = document.querySelector(".text-1");
@@ -81,6 +82,8 @@ const fx = [];
 fx[0] = new TextScramble(texts[0]);
 fx[1] = new TextScramble(texts[1]);
 fx[2] = new TextScramble(texts[2]);
+fx[3] = new TextScramble(texts[3]);
+fx[4] = new TextScramble(texts[4]);
 // let textMap = new Map();
 // let fx
 // for(let i = 0; i<=texts.length;i++){
@@ -96,7 +99,9 @@ const next = () => {
   fx[0].setText(phrases[0], 0).then(() => {
     fx[1].setText(phrases[1], 1).then(() => {
       fx[2].setText(phrases[2], 2).then(() => {
-        
+        fx[3].setText(phrases[3], 3).then(() => {
+          fx[4].setText(phrases[4], 4).then(() => {});
+        });
       });
     });
 
