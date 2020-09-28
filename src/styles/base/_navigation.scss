@@ -9,10 +9,10 @@
   z-index: 1000;
   &__logo-text{
     position: absolute;
-    top: 1.15rem;
-    left: 6rem;
+    top: 1.75rem;
+    left: 9rem;
 // font-weight: 00;
-    font-size: 1.3rem;
+    font-size: 2rem;
     &--1{
       color: #FE3E54;
 
@@ -28,19 +28,19 @@
   position: absolute;
   top: .5rem;
   left: 2rem;
-  height: 2rem;
+  height: 4rem;
 
 }
 
   &__logo--linkedIn {
-    height: 3rem;
+    height: 4rem;
     margin-right: 1rem;
     &:hover{
         @include svgHover;
     }
   }
   &__logo--github {
-    height: 3rem;
+    height: 4rem;
     margin-right: 1rem;
     &:hover{
         @include svgHover;
