@@ -7,43 +7,39 @@
   top: 1rem;
   right: 1rem;
   z-index: 1000;
-  &__logo-text{
+  &__logo-text {
     position: absolute;
     top: 1.75rem;
     left: 9rem;
-// font-weight: 00;
+    // font-weight: 00;
     font-size: 2rem;
-    &--1{
-      color: #FE3E54;
-
+    &--1 {
+      color: $logo-color-1;
     }
-    &--2{
-      color: #00E85BE6;
-
+    &--2 {
+      color: $logo-color-2;
     }
-
   }
 
-&__logo-MK{
-  position: absolute;
-  top: .5rem;
-  left: 2rem;
-  height: 4rem;
-
-}
+  &__logo-MK {
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+    height: 4rem;
+  }
 
   &__logo--linkedIn {
     height: 4rem;
     margin-right: 1rem;
-    &:hover{
-        @include svgHover;
+    &:hover {
+      @include svgHover;
     }
   }
   &__logo--github {
     height: 4rem;
     margin-right: 1rem;
-    &:hover{
-        @include svgHover;
+    &:hover {
+      @include svgHover;
     }
   }
 }

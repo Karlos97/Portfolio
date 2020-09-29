@@ -43,7 +43,7 @@ class TextScramble {
           char = this.randomChar();
           this.queue[i].char = char;
         }
-        output += `<span class="dud">${char}</span>`;
+        output += `<span class="letters">${char}</span>`;
       } else {
         output += from;
       }
@@ -74,7 +74,7 @@ const phrases = [
   "projekty znajdziesz poniżej.",
 ];
 // let textNumb = 1;
-const el = document.querySelector(".text-1");
+// const el = document.querySelector(".text-1");
 // const el = document.querySelector(`.text-${textNumb}`);
 // const fx = new TextScramble(el);
 const texts = document.querySelectorAll("div[class^='text-']");
@@ -92,15 +92,22 @@ fx[4] = new TextScramble(texts[4]);
 
 // }
 // console.log(textMap.get("text-1"));
-
+const arrow = document.getElementsByClassName("header__arrow")[0];
 let counter = 0;
 const next = () => {
   // fx[0].setText(phrases[counter],counter).then(() => {
   fx[0].setText(phrases[0], 0).then(() => {
     fx[1].setText(phrases[1], 1).then(() => {
+      // let words = texts[1].textContent.split(" ");
+      // words[2].style.color = "#000";
       fx[2].setText(phrases[2], 2).then(() => {
         fx[3].setText(phrases[3], 3).then(() => {
-          fx[4].setText(phrases[4], 4).then(() => {});
+          fx[4].setText(phrases[4], 4).then(() => {
+            setTimeout(() => {
+              arrow.style.cssText =
+                "height: 12rem;width: 4rem;visibility: visible; ";
+            }, 500);
+          });
         });
       });
     });

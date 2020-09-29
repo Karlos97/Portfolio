@@ -1,9 +1,6 @@
 .header {
-  height: 95vh;
+  height: 100vh;
   background-color: $background-color;
-  // background-color: rgb(60, 43, 73);
-
-
   &__bg--gif {
     height: 100%;
     width: 100%;
@@ -16,65 +13,131 @@
     top: 10rem;
     left: 28rem;
     height: 6rem;
-    // filter: invert(96%) sepia(57%) saturate(86%) hue-rotate(9deg)
-    //   brightness(106%) contrast(24%);
-    // fill: $color-white-grey-1;
-    // &:hover {
-    //   @include svgHover;
-    // }
-    // --handle-color: #c13127;
   }
-  // &__devices{
-  //   position: absolute;
-  //   top: 50rem;
-  //   left: 18rem;
-  //   height: 25rem;
-  //   fill: #23666f;
-  //   // fill: #1c3c40;
-    
-  // }
-
   &__box {
     position: absolute;
     top: 15rem;
     left: 25rem;
-    height: 45rem;
+    height: 30rem;
     .heading-primary {
-     // @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
-      // html, body{
-      //   font-family: 'Roboto Mono', monospace;
-      //   background: #212121;
-          // position: relative;
-          //   height: 100%;}       
-          //  align-items: center;
-        // display: flex;
-
-      .container {
-        height: 100%;
-        width: 45rem;
-      }
-
-        .text-1, .text-2 ,.text-3, .text-4, .text-5{
-        
+      height: 100%;
+      width: 45rem;
+      .text-1,
+      .text-2,
+      .text-3,
+      .text-4,
+      .text-5 {
         justify-content: center;
         display: flex;
 
-          font-weight: 100;
-          font-size: 2.5rem;
-          color: #e6e0e0;
-        }
-        .dud {
-          color: #757575;
-        }
-
-
-      &--main {
+        font-weight: 100;
+        font-size: 2.5rem;
+        color: $btn-font-color;
       }
-      &--sub {
+      .text-2{
+        // color:
+        // linear-gradient(
+        //   to right,
+        //   red,
+        //   yellow 10%
+        // );
+        // background: linear-gradient(to right, $btn-font-color 25%, 
+
+        
+        background: linear-gradient(90deg, $btn-font-color 40%, 
+         $logo-color-1 67%, $logo-color-2 25%); 
+        // background: linear-gradient(90deg, red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
+        // background:linear-gradient(217deg, $btn-font-color 70.71%),
+        // linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+        // linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text; 
+      }
+      .letters {
+        color: #757575;
       }
     }
   }
- 
+
+  &__arrow {
+    cursor: pointer;
+    left: 44.5rem;
+    position: absolute;
+    top: 38rem;
+    height: 0;
+    width: 0;
+    // transform: translateX(-50%) translateY(-50%);
+    transition: transform 0.1s;
+    visibility: hidden;
+
+    // -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+
+    // @-webkit-keyframes cssAnimation {
+    //   to {
+    //     height: 12rem;
+    //     width: 4rem;
+    //     visibility: visible;
+    //   }
+    // }
+    &-left,
+    &-right {
+      background-color: $btn-font-color;
+      height: 4px;
+      left: -5px;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+
+      &:after {
+        background-color: $color-dark-red-1;
+        content: "";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: all $transition-time;
+      }
+    }
+
+    &-left {
+      transform: rotate(45deg);
+      transform-origin: bottom right;
+
+      &:after {
+        left: 100%;
+        right: 0;
+        transition-delay: 0s;
+      }
+    }
+
+    &-right {
+      top: 64px;
+      transform: rotate(135deg);
+      transform-origin: top right;
+
+      &:after {
+        left: 0;
+        right: 100%;
+        transition-delay: $transition-time;
+      }
+    }
+
+    &:hover & {
+      &-left:after {
+        left: 0;
+        transition-delay: $transition-time;
+      }
+
+      &-right:after {
+        right: 0;
+        transition-delay: 0s;
+      }
+    }
+
+    &:active {
+      transform: translateX(-2%) translateY(-2%) scale(0.9);
+    }
+  }
+
   // background-image: linear-gradient(
   //     to right bottom,
   //     rgba(green 0.8),
