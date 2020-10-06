@@ -22,74 +22,63 @@
     .heading-primary {
       height: 100%;
       width: 45rem;
-      .text-1,
-      .text-2,
-      .text-3,
-      .text-4,
-      .text-5 {
-        justify-content: center;
-        display: flex;
-
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .text-1{
         font-weight: 100;
         font-size: 2.5rem;
+      }
+      .text-1:not(:nth-child(2)){
         color: $btn-font-color;
       }
-      .text-2{
-        // color:
-        // linear-gradient(
-        //   to right,
-        //   red,
-        //   yellow 10%
-        // );
-        // background: linear-gradient(to right, $btn-font-color 25%, 
-
-        
-        background: linear-gradient(90deg, $btn-font-color 40%, 
-         $logo-color-1 67%, $logo-color-2 25%); 
-        // background: linear-gradient(90deg, red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
-        // background:linear-gradient(217deg, $btn-font-color 70.71%),
-        // linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-        // linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text; 
+      .text-1:nth-child(2):first-line {
+        background: linear-gradient(
+          90deg,
+          $btn-font-color,
+          $btn-font-color 51%,
+          $logo-color-1 51%,
+          $logo-color-1 76%,
+          $logo-color-2,
+          $logo-color-2 25%
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
       }
       .letters {
         color: #757575;
       }
     }
   }
-
+  // &__hoover-box {
+  //   height: 12rem;
+  //   width: 8rem;
+  //   position: absolute;
+  //   top: 38rem;
+  //   left: 44.5rem;
+  // }
   &__arrow {
     cursor: pointer;
-    left: 44.5rem;
     position: absolute;
-    top: 38rem;
-    height: 0;
-    width: 0;
-    // transform: translateX(-50%) translateY(-50%);
+    top: 40rem;
+    left: 44.3rem;
+    height: 4rem;
+    width: 7rem;
     transition: transform 0.1s;
     visibility: hidden;
+    // transform: rotate(90deg);
 
-    // -webkit-animation: cssAnimation 0s ease-in 5s forwards;
-
-    // @-webkit-keyframes cssAnimation {
-    //   to {
-    //     height: 12rem;
-    //     width: 4rem;
-    //     visibility: visible;
-    //   }
-    // }
     &-left,
     &-right {
       background-color: $btn-font-color;
       height: 4px;
       left: -5px;
       position: absolute;
-      top: 50%;
-      width: 100%;
+      top: 25rem;
+      width: 4rem;
 
       &:after {
-        background-color: $color-dark-red-1;
+        background-color: $logo-color-1;
         content: "";
         height: 100%;
         position: absolute;
@@ -97,8 +86,17 @@
         transition: all $transition-time;
       }
     }
+    &-right:after {
+      background-color: $logo-color-2;
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transition: all $transition-time;
+    }
 
     &-left {
+      top: 4rem;
       transform: rotate(45deg);
       transform-origin: bottom right;
 
@@ -110,7 +108,7 @@
     }
 
     &-right {
-      top: 64px;
+      top: 4.4rem;
       transform: rotate(135deg);
       transform-origin: top right;
 
@@ -134,64 +132,7 @@
     }
 
     &:active {
-      transform: translateX(-2%) translateY(-2%) scale(0.9);
+      transform: translate(1px, 1px) scale(0.9);
     }
   }
-
-  // background-image: linear-gradient(
-  //     to right bottom,
-  //     rgba(green 0.8),
-  //     rgba(red, 0.8)),
-  // url(../../img/rysyMorning.jpg);
-
-  // background-size: cover;
-  // background-position: top;
-  // position: relative;
-
-  // &-img{
-  // height: 100%;
-  // width: 100%;
-  // background-image:
-  // linear-gradient(
-  //     to right bottom,
-  //     rgba(#e6e6ea, 0.3),
-  //     rgba(#f4f4f8, 0.1)),
-  // url(../../img/code.jpg);
-  // filter: blur(2px);
-  // -webkit-filter: blur(8px);
-  // transform: scale(1.9);
-  // background-color: rgba(0,0,0, 0.4);
-  // background-size: cover;
-  // background-position: top;
-  // position: relative;
-  // }
 }
-// @mixin icon-colors($fallback: black) {
-//     fill: $fallback;
-//     @content;
-//   }
-
-//   .icon--color {
-//       width:200px;
-//       height:200px;
-//     //   @include icon-colors(#ef5b49) {
-//         --handle-color: #c13127;
-//         --cup-color: #ef5b49;
-//         --smoke-color: #cacaea;
-//       }
-
-//   .icon {
-//     display: inline-block;
-//     width: 70px;
-//     height: 70px;
-//     background-size: cover;
-//   }
-//   .icon-bike {
-//       fill: black;
-//     background-image: url("../../img/KMlogo.svg");
-//     --handle-color: white;
-//   }
-//   .icon-bike:hover,
-//   .icon-bike:focus {
-//     // background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-red.svg);
-//   }
