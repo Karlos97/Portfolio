@@ -54,7 +54,7 @@ class TextScramble {
 const phrases = [
   "Cześć.",
   "Nazywam sie Minta Karol.",
-  "Jestem Front-End developerem.",
+  // "Jestem Front-End developerem.",
   "Więcej informacji o mnie oraz",
   "projekty znajdziesz poniżej.",
 ];
@@ -64,6 +64,7 @@ const newTextNode = () => {
   return node
 } 
 let counter = 0;
+const arrow = document.getElementsByClassName("header__arrow")[0];
 const next = () => {
   if (counter === phrases.length) {
     return 
@@ -74,5 +75,13 @@ const next = () => {
     setTimeout(next, 800);
   });
   counter += 1
+  if(counter % phrases.length === 0){
+    setTimeout(() => {
+      arrow.style.cssText =
+        "height: 12rem;width: 4rem;visibility: visible; ";
+    }, 1500);
+  }
 };
 next();
+
+
