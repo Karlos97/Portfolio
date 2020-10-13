@@ -1,62 +1,47 @@
 .header {
   height: 100vh;
   background-color: $background-color;
-  &__bg--gif {
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.3;
-    overflow: hidden;
-  }
-  &__logo-KM {
-    position: absolute;
-    top: 10rem;
-    left: 28rem;
-    height: 6rem;
-  }
+  display: flex;
+  justify-content: center;
+// flex-direction: column;
   &__box {
-    position: absolute;
-    top: 15rem;
-    left: 25rem;
+    margin-top: 18rem;
     height: 30rem;
-    .heading-primary {
-      height: 100%;
+      height: 17rem;
       width: 45rem;
       display: flex;
       align-items: center;
       flex-direction: column;
       .text-1{
-        font-weight: 100;
+        font-weight: 700;
         font-size: 2.5rem;
       }
       .text-1:not(:nth-child(2)){
-        color: $btn-font-color;
-      }
-      .text-1:nth-child(2):first-line {
         background: linear-gradient(
-          90deg,
+          to right,
           $btn-font-color,
-          $btn-font-color 51%,
-          $logo-color-1 51%,
-          $logo-color-1 76%,
-          $logo-color-2,
-          $logo-color-2 25%
-        );
+          $btn-font-color
+         );        
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+      }
+      .text-1:nth-child(2) {
+        background: linear-gradient(
+            to right,
+            $btn-font-color,
+            $btn-font-color 53%,
+            $logo-color-1 53%,
+            $logo-color-1 76%,
+            $logo-color-2,
+            $logo-color-2 25%
+          );        
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
       }
       .letters {
         color: #757575;
       }
-    }
   }
-  // &__hoover-box {
-  //   height: 12rem;
-  //   width: 8rem;
-  //   position: absolute;
-  //   top: 38rem;
-  //   left: 44.5rem;
-  // }
   &__arrow {
     cursor: pointer;
     position: absolute;
@@ -66,8 +51,6 @@
     width: 7rem;
     transition: transform 0.1s;
     visibility: hidden;
-    // transform: rotate(90deg);
-
     &-left,
     &-right {
       background-color: $btn-font-color;
@@ -76,7 +59,6 @@
       position: absolute;
       top: 25rem;
       width: 4rem;
-
       &:after {
         background-color: $logo-color-1;
         content: "";
@@ -94,7 +76,6 @@
       top: 0;
       transition: all $transition-time;
     }
-
     &-left {
       top: 4rem;
       transform: rotate(45deg);
@@ -106,7 +87,6 @@
         transition-delay: 0s;
       }
     }
-
     &-right {
       top: 4.4rem;
       transform: rotate(135deg);
@@ -118,19 +98,16 @@
         transition-delay: $transition-time;
       }
     }
-
     &:hover & {
       &-left:after {
         left: 0;
         transition-delay: $transition-time;
       }
-
       &-right:after {
         right: 0;
         transition-delay: 0s;
       }
     }
-
     &:active {
       transform: translate(1px, 1px) scale(0.9);
     }

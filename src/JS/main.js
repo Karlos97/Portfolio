@@ -70,7 +70,8 @@ const next = () => {
     return 
   }
   const node = newTextNode()
-  document.querySelector(".heading-primary").appendChild(node);
+  // document.querySelector(".heading-primary").appendChild(node);
+  document.querySelector(".header__box").appendChild(node);
   new TextScramble(node).setText(phrases[counter]).then(() => {
     setTimeout(next, 800);
   });

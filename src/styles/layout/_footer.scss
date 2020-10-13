@@ -1,0 +1,56 @@
+.footer {
+  background-color: $color-dark-grey-2;
+  // padding: 10rem 0;
+  font-size: 1.4rem;
+  color: $color-light-grey-1;
+
+  &__logo-box {
+    display: flex;
+    // text-align: center;
+    justify-content: center;
+  }
+  &__logo-MK {
+    height: auto;
+    width: 25rem;
+    margin: 8rem 0 8rem 0;
+  }
+  .row {
+    widows: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .col-1-of-2 {
+    width: 50%;
+    // height: ;
+  }
+  &__navigation {
+    border-top: 1px solid $color-dark-grey-1;
+    padding-top: 2rem;
+  }
+  &__list {
+    list-style: none;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      // color: $color-primary;
+      // box-shadow: 0 1rem 2rem rgba($color-black, .4);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-dark-grey-1;
+  }
+}
