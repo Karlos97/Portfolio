@@ -1,12 +1,10 @@
 .footer {
   background-color: #8976b1;
-  // padding: 10rem 0;
   font-size: 1.4rem;
   color: $btn-font-color;
 
   &__logo-box {
     display: flex;
-    // text-align: center;
     justify-content: center;
   }
   &__logo-MK {
@@ -15,19 +13,18 @@
     margin: 8rem 0 8rem 0;
   }
   .row {
-    // width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 3rem;
   }
   .col-1-of-2 {
     width: 50%;
-    // height: ;
   }
   &__navigation {
     border-top: 1px solid $color-dark-grey-1;
     padding-top: 2rem;
     display: inline-block;
+    margin-left: 1rem;
   }
   &__list {
     list-style: none;
@@ -45,46 +42,15 @@
     color: $btn-font-color;
     &:hover,
     &:active {
-      // color: $color-primary;
-      // box-shadow: 0 1rem 2rem rgba($color-black, .4);
       transform: rotate(5deg) scale(1.3);
     }
   }
-
   &__copyright {
     border-top: 1px solid $color-dark-grey-1;
     padding-top: 2rem;
     margin-left: 20%;
     display: inline-block;
-    &::first-line {
-      background: linear-gradient(
-        to right,
-        $btn-font-color,
-        $btn-font-color 12%,
-        $logo-color-1 12%,
-        $logo-color-1 22%,
-        $logo-color-2 22%,
-        $logo-color-2 31%,
-        $btn-font-color 31%,
-        $btn-font-color,
-      );
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-    }
-    // // &:not(::first-line) {
-    // &{
-    //   background: linear-gradient(
-    //     to right,
-    //     $logo-color-1,
-    //     $logo-color-1 10%,
-    //     $logo-color-2 10%,
-    //     $logo-color-2
-    //   );
-    //   -webkit-text-fill-color: transparent;
-    //   -webkit-background-clip: text;
-    //   // color:black;
-    //   // background: black;
-
-    // }
+    float: right;
+    margin-right: 1rem;
   }
 }

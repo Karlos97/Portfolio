@@ -3,7 +3,6 @@
   background-color: $background-color;
   display: flex;
   justify-content: center;
-// flex-direction: column;
   &__box {
     margin-top: 18rem;
     height: 30rem;
@@ -46,7 +45,7 @@
     cursor: pointer;
     position: absolute;
     top: 40rem;
-    left: 44.3rem;
+    left: 48%;
     height: 4rem;
     width: 7rem;
     transition: transform 0.1s;
@@ -88,7 +87,7 @@
       }
     }
     &-right {
-      top: 4.4rem;
+      top: 4.3rem;
       transform: rotate(135deg);
       transform-origin: top right;
 

@@ -1,5 +1,20 @@
-@mixin svgHover
+@mixin svgHover($color)
  {
     cursor: pointer;
-    filter: invert(43%) sepia(94%) saturate(4139%) hue-rotate(331deg) brightness(101%) contrast(99%);    // filter: invert(20%) sepia(91%) saturate(2266%) hue-rotate(347deg) brightness(98%) contrast(83%);
+    filter: $color;
+ }
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
 }
+
