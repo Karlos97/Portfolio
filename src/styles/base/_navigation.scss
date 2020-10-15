@@ -1,0 +1,43 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  &__logo-text {
+    position: absolute;
+    top: 1.75rem;
+    left: 9rem;
+    font-size: 2rem;
+    &--1 {
+      color: $logo-color-1;
+    }
+    &--2 {
+      color: $logo-color-2;
+    }
+  }
+  &__logo-MK {
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+    height: 4rem;
+  }
+
+  &__logo--linkedIn {
+    height: 4rem;
+    margin-right: 1rem;
+    &:hover {
+      @include svgHover(invert(43%) sepia(94%) saturate(4139%) hue-rotate(331deg) brightness(101%) contrast(99%)); 
+    }
+  }
+  &__logo--github {
+    height: 4rem;
+    margin-right: 1rem;
+    &:hover {
+      @include svgHover(invert(55%) sepia(94%) saturate(577%) hue-rotate(93deg) brightness(100%) contrast(105%)); 
+    }
+  }
+}

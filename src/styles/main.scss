@@ -1,6 +1,11 @@
 @import "abstracts/variables";
-@import "components/bubbles";
-@import "components/header";
+@import "abstracts/mixins";
+@import "base/navigation";
+@import "base/base";
+@import "layout/header";
+@import "layout/about";
+@import "layout/projects";
+@import "layout/footer";
 
 
 

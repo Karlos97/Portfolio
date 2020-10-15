@@ -1,0 +1,71 @@
+.about {
+  height: 94rem;
+  width: 100%;
+  &-bg {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0.8;
+  }
+  &__rhomb {
+display: flex;
+flex-direction: row;
+height: 28rem;
+width: 65rem;
+padding: 0 0 2rem 3rem;
+margin: 10rem 0 0 47rem;
+background-color: rgba(white, 0.8);
+box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+transform: skewX(-12deg);
+// @include respond(big-desktop) {
+// margin: 10rem 0 0 50rem;
+// }
+// @include respond(big-desktop) {
+//   margin: 10rem 0 0 12rem;
+// }
+    &-col-1{
+      width: 15%;
+      height: 100%;
+      transform: skewX(12deg);
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    &-col-2{
+      width: 67%;
+            height: 100%;
+            transform: skewX(12deg);
+      }
+  }
+  &-line {
+    height: 3rem;
+  }
+  &-picture {
+    height: 6rem;
+    width: 10rem;
+    &:first-child{
+      margin-top: 2rem;
+    }
+  }
+    &__text {
+      margin: 3rem 0 0 2rem;
+      height: 20rem;
+      width: 45rem;
+      .heading-small{
+       text-align:center;
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.4rem;
+      }
+    }
+  &__rhomb:nth-child(3) {
+   
+    .about__text{
+      margin: 3rem 1rem 0 1rem;
+        height: 20rem;
+        width: 60rem;
+      }
+  }}

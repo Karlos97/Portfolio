@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>name</title>
-</head>
+  </head>
 
-<body>
-    <div class="navigation"></div>
+  <body>
+    <div class="navigation">
+      <a href="https://www.linkedin.com/in/karol-minta/" target="_blank">
+        <img
+          src="../img/linkedin.svg"
+          class="navigation__logo--linkedIn"
+      /></a>
+      <a href="https://github.com/Karlos97" target="_blank">
+        <img
+          src="../img/github.svg"
+          class="navigation__logo--github"
+      /></a>
+      <img src="../img/logo.svg" class="navigation__logo-MK" />
+      <div class="navigation__logo-text">
+        <span class="navigation__logo-text--1">Minta</span>
+        <span class="navigation__logo-text--2">Karol</span>
+      </div>
+    </div>
     <header class="header">
-
-        <div id="bubbles">
-            <div class="bubble x1"></div>
-            <div class="bubble x2"></div>
-            <div class="bubble x3"></div>
-            <div class="bubble x4"></div>
-            <div class="bubble x5"></div>
-            <div class="bubble x6"></div>
-            <div class="bubble x7"></div>
-            <div class="bubble x8"></div>
-            <div class="bubble x9"></div>
-            <div class="bubble x10"></div>
-            <div class="bubble x11"></div>
-            <div class="bubble x12"></div>
-            <div class="bubble x13"></div>
-            <div class="bubble x14"></div>
-            <div class="bubble x15"></div>
-            <div class="bubble x16"></div>
-            <div class="bubble x17"></div>
-            <div class="bubble x18"></div>
-            <div class="bubble x19"></div>
-            <div class="bubble x20"></div>
-        </div>
-
-
-
-
-
-
-
-
+      <div class="header__box">
+      </div>
+        <a href="#about" class="header__arrow">
+          <div class="header__arrow-right"></div>
+          <div class="header__arrow-left"></div>
+        </a>
     </header>
     <main>
-        <section class="about"></section>
-        <section class="projects"></section>
+      <section class="about" id="about">
+        <img class="about-bg" src="../img/blueCode.gif">
+        </img>
+  <div class="about__rhomb">
+      <div class="about__rhomb-col-1">
+      <img src="../img/Mondi_Logo.svg" class="about-picture">
+    <span class="about-line"></span>
+    <img src="../img/logo-duni-poland.svg" class="about-picture"> 
+       <span class="about-line"></span>
+    <img src="../img/atrem.svg" class="about-picture">
+  </div>
+     <div class="about__rhomb-col-2">
+    <div class="about__text">
+      <h2 class="heading-small">Moje doświadczenie</h2>
+      <p >W firmie Mondi do moich zadań należały m.in tematy instalacji maszyn przetwórczych(bezpieczeństwo, szkolenia oraz sama instalacja). Zajmowałem się tam również utrzymaniem maszyn w ruchu.
+                 W firmie Duni moim głównym zadaniem było utrzymanie maszyn w ruchu oraz przeprowadzanie przeglądów. W firmie Atrem zajmuję się programowaniem sterowników PLC, paneli HMI oraz automatyką urządzeń.
+      </p>
+    </div>
+</div>
+  </div>
+  <div class="about__rhomb">
+   <div class="about__rhomb-col-2">
+  <div class="about__text">
+    <h2 class="heading-small">O mnie</h2>
+          <p > Jestem studentem politechniki Poznańskiej(ostatni rok), moim motywem przewodnim jest rozwój. Moją osobę można opisać jako szukającą wyzwań, starającą się odkryć to, co lubi i zmierzanie do tego. Od samego początku mojej "przygody" tzn. pierwszej pracy poznaję siebie i rzeczy, które lubię robić, dostosowuje podłoże właśnie pod te tematy. Jestem osobą, która pracę traktuje jako hobby. Lubię czytać blogi o bezpieczeństwie IT. Jestem bardzo aktywną osobą. Lubię języki wysokopoziomowe, sport i książki. 
+         </p>
+  </div>
+</div>
+</div>
+      </section>
+      <section class="projects"></section>
     </main>
-    <footer class="footer"></footer>
-</body>
-
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="../img/logo.svg" class="footer__logo-MK" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+        <lu class="footer__list">
+          <li class="footer__item"><a href="" class="footer__link">Poczatek</a></li>
+          <li class="footer__item"><a href="#about" class="footer__link">O mnie</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Projekty</a></li>
+          <li class="footer__item"><a href="https://www.linkedin.com/in/karol-minta/" target="_blank" class="footer__link">LinkedIn</a></li>
+          <li class="footer__item"><a href="https://github.com/Karlos97" target="_blank" class="footer__link">GitHub</a></li>
+        </lu>
+          </div>
+        </div>
+          <div class="col-1-of-2"> 
+          <div class="footer__copyright">
+            Stworzone na potrzeby portfolio. Prawa autorskie © zastrzeżone.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
