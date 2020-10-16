@@ -1,7 +1,7 @@
 .navigation {
   position: fixed;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: flex-end;
   top: 1rem;
@@ -26,18 +26,22 @@
     height: 4rem;
   }
 
-  &__logo--linkedIn {
-    height: 4rem;
-    margin-right: 1rem;
+  &__logo--about {
+    @include logoSize;
+    height: 4.15rem;
     &:hover {
       @include svgHover(invert(43%) sepia(94%) saturate(4139%) hue-rotate(331deg) brightness(101%) contrast(99%)); 
     }
-  }
-  &__logo--github {
-    height: 4rem;
-    margin-right: 1rem;
+  } &__logo--linkedIn {
+    @include logoSize;
     &:hover {
       @include svgHover(invert(55%) sepia(94%) saturate(577%) hue-rotate(93deg) brightness(100%) contrast(105%)); 
+    }
+  }
+  &__logo--github {
+    @include logoSize;
+    &:hover {
+      @include svgHover(invert(43%) sepia(94%) saturate(4139%) hue-rotate(331deg) brightness(101%) contrast(99%)); 
     }
   }
 }
