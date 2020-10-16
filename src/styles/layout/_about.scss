@@ -2,12 +2,11 @@
   height: 94rem;
   width: 100%;
   &-bg {
-    position: absolute;
+        position: absolute;
     height: inherit;
     width: inherit;
     z-index: -1;
     overflow: hidden;
-    opacity: 0.8;
   }
   &__rhomb {
 display: flex;
