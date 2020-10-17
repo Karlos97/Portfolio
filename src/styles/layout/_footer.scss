@@ -24,6 +24,13 @@
   }
   .col-1-of-2 {
     width: 40%;
+    @include respond(big-desktop) {
+      width: 25%;
+    }
+       @include respond(desktop) {
+      width: 35%;
+    }
+
   }
   &__navigation {
     border-top: 1px solid $color-dark-grey-1;
