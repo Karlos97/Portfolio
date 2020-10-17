@@ -50,6 +50,13 @@
     width: 7rem;
     transition: transform 0.1s;
     visibility: hidden;
+    @include respond(tab-land) {
+    left: 47%;
+      }
+      @include respond(phone) {
+    top: 39rem;
+    left: 42%;
+      }
     &-left,
     &-right {
       background-color: $btn-font-color;
@@ -58,6 +65,7 @@
       position: absolute;
       top: 25rem;
       width: 4rem;
+ 
       &:after {
         background-color: $logo-color-1;
         content: "";
@@ -87,9 +95,16 @@
       }
     }
     &-right {
-      top: 4.3rem;
+      top: 4.4rem;
       transform: rotate(135deg);
       transform-origin: top right;
+    //   @include respond(tab-land) {
+    //   top: 4.4rem;
+
+    //   }
+      @include respond(tab-port) {
+      top: 4.45rem;
+    }
 
       &:after {
         left: 0;
