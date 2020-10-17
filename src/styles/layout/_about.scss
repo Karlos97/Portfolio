@@ -23,10 +23,22 @@
     background-color: rgba(white, 0.8);
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     transform: skewX(-12deg);
-        @include respond(big-desktop) {
+    &:nth-child(3) {
+      .about__text {
+        margin: 3rem 1rem 0 1rem;
+        height: 20rem;
+        width: 60rem;
+        @include respond(phone) {
+          margin: 0 1rem 0 1rem;
+          height: 47rem;
+          width: 28rem;
+        }
+      }
+    }
+    @include respond(big-desktop) {
       margin: 12rem 0 0 52rem;
     }
-            @include respond(desktop) {
+    @include respond(desktop) {
       margin: 12rem 0 0 30rem;
     }
     @include respond(tab-land) {
@@ -42,7 +54,7 @@
       height: 48rem;
       width: 30rem;
     }
-    &-col-1 {
+    &-col--1 {
       width: 15%;
       height: 100%;
       transform: skewX(12deg);
@@ -54,7 +66,7 @@
         width: 12%;
       }
     }
-    &-col-2 {
+    &-col--2 {
       width: 67%;
       height: 100%;
       transform: skewX(12deg);
@@ -94,18 +106,6 @@
     }
     p {
       font-size: 1.4rem;
-    }
-  }
-  &__rhomb:nth-child(3) {
-    .about__text {
-      margin: 3rem 1rem 0 1rem;
-      height: 20rem;
-      width: 60rem;
-      @include respond(phone) {
-        margin: 0 1rem 0 1rem;
-        height: 47rem;
-        width: 28rem;
-      }
     }
   }
 }

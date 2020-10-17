@@ -27,10 +27,9 @@
     @include respond(big-desktop) {
       width: 25%;
     }
-       @include respond(desktop) {
+    @include respond(desktop) {
       width: 35%;
     }
-
   }
   &__navigation {
     border-top: 1px solid $color-dark-grey-1;
@@ -38,7 +37,6 @@
     display: inline-block;
   }
   &__list {
-    list-style: none;
     text-transform: uppercase;
     cursor: pointer;
   }
