@@ -98,8 +98,11 @@
       top: 4.3rem;
       transform: rotate(135deg);
       transform-origin: top right;
-      @include respond(tab-port) {
+      @include respond(desktop) {
       top: 4.45rem;
+    } 
+         @include respond(phone) {
+      top: 4.5rem;
     }
 
       &:after {
