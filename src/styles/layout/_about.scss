@@ -1,12 +1,39 @@
 .about {
   height: 94rem;
   width: 100%;
-  &-bg {
+  // margin: 0;
+  // &-bg {
+  //       position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: -1;
+  //   overflow: hidden;
+  // } 
+  @include respond(phone) {
+    height: 120rem;
+}
+   &-bg {
         position: absolute;
     height: inherit;
     width: inherit;
     z-index: -1;
-    overflow: hidden;
+    // overflow: hidden;
+    background-image: url("../../img/rysyMorning.jpg");
+    
+    @include respond(phone) {
+    // width: 70rem;
+    // height: 60rem; 
+    background-position: center;
+    // zoom: 5;
+    background-size: cover;
+  // max-width: 45rem;
+  
+      // -ms-interpolation-mode: bicubic; 
+      // background-position: 0 -50px; 
+      // height: 120rem;  
+      // background-repeat: no-repeat;
+  // background-size: auto;
+  }
   }
   &__rhomb {
 display: flex;
@@ -18,12 +45,19 @@ margin: 10rem 0 0 47rem;
 background-color: rgba(white, 0.8);
 box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
 transform: skewX(-12deg);
-// @include respond(big-desktop) {
-// margin: 10rem 0 0 50rem;
-// }
-// @include respond(big-desktop) {
-//   margin: 10rem 0 0 12rem;
-// }
+@include respond(tab-land) {
+margin: 10rem 0 0 27rem;
+}
+@include respond(tab-port) {
+margin: 10rem 0 0 17rem;
+}
+@include respond(phone) {
+padding: 0 0 0 1rem;
+margin: 10rem 0 0 7rem;
+transform: skewX(0deg);
+height: 48rem;
+width: 30rem;
+}
     &-col-1{
       width: 15%;
       height: 100%;
@@ -31,15 +65,26 @@ transform: skewX(-12deg);
       margin: 1rem;
       display: flex;
       flex-direction: column;
+      @include respond(phone) {
+        transform: skewX(0deg);
+        width: 12%;
+      }
     }
     &-col-2{
       width: 67%;
             height: 100%;
             transform: skewX(12deg);
+            @include respond(phone) {
+            transform: skewX(0deg);
+            width: 80%;
+          }
       }
   }
   &-line {
     height: 3rem;
+    @include respond(phone) {
+      height: 12rem;
+  }
   }
   &-picture {
     height: 6rem;
@@ -47,11 +92,18 @@ transform: skewX(-12deg);
     &:first-child{
       margin-top: 2rem;
     }
+    @include respond(phone) {
+      width: 5rem;
+  }
   }
     &__text {
       margin: 3rem 0 0 2rem;
       height: 20rem;
       width: 45rem;
+      @include respond(phone) {
+        height: 45rem;
+        width: 20rem;
+      }
       .heading-small{
        text-align:center;
         font-size: 2rem;
@@ -66,5 +118,9 @@ transform: skewX(-12deg);
       margin: 3rem 1rem 0 1rem;
         height: 20rem;
         width: 60rem;
+        @include respond(phone) {
+          height: 60rem;
+          width: 27rem;
+        }
       }
   }}
