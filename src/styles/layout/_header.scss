@@ -49,6 +49,9 @@
     @include respond(tab-land) {
       left: 47%;
     }
+    @include respond(tab-port) {
+      left: 46%;
+    }
     @include respond(phone) {
       top: 39rem;
       left: 42%;
