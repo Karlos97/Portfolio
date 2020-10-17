@@ -54,7 +54,6 @@ class TextScramble {
   const phrases = [
     "Cześć.",
     "Nazywam sie Minta Karol.",
-    // "Jestem Front-End developerem.",
     "Więcej informacji o mnie oraz",
     "projekty znajdziesz poniżej.",
   ];
@@ -70,7 +69,6 @@ class TextScramble {
       return 
     }
     const node = newTextNode()
-    // document.querySelector(".heading-primary").appendChild(node);
     document.querySelector(".header__box").appendChild(node);
     new TextScramble(node).setText(phrases[counter]).then(() => {
       setTimeout(next, 800);
