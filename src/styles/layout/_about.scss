@@ -17,23 +17,9 @@
     height: inherit;
     width: inherit;
     z-index: -1;
-    // overflow: hidden;
-    background-image: url("../../img/rysyMorning.jpg");
-    
-    @include respond(phone) {
-    // width: 70rem;
-    // height: 60rem; 
     background-position: center;
-    // zoom: 5;
     background-size: cover;
-  // max-width: 45rem;
-  
-      // -ms-interpolation-mode: bicubic; 
-      // background-position: 0 -50px; 
-      // height: 120rem;  
-      // background-repeat: no-repeat;
-  // background-size: auto;
-  }
+    background-image: url("../../img/rysyMorning.jpg");
   }
   &__rhomb {
 display: flex;
