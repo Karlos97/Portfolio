@@ -17,7 +17,8 @@
     margin-bottom: 3rem;
     & div:first-child {
       margin-left: 1rem;
-    }  & div:last-child {
+    }
+    & div:last-child {
       margin-left: auto;
     }
   }
@@ -26,7 +27,7 @@
   }
   &__navigation {
     border-top: 1px solid $color-dark-grey-1;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     display: inline-block;
   }
   &__list {
@@ -50,9 +51,8 @@
   }
   &__copyright {
     border-top: 1px solid $color-dark-grey-1;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     margin-left: 20%;
-    // float: right;
     display: flex;
     justify-self: flex-end;
     margin-right: 1rem;
