@@ -1,6 +1,8 @@
 .about {
   height: 94rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   @include respond(phone) {
     height: 120rem;
   }
@@ -16,10 +18,12 @@
   &__rhomb {
     display: flex;
     flex-direction: row;
+    align-self: center;
     height: 28rem;
     width: 65rem;
     padding: 0 0 2rem 3rem;
-    margin: 10rem 0 0 62rem;
+    margin: 10rem 0 0 0;
+    // margin: 10rem 0 0 62rem;
     background-color: rgba(white, 0.8);
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     transform: skewX(-12deg);
@@ -36,20 +40,20 @@
       }
     }
     @include respond(big-desktop) {
-      margin: 12rem 0 0 52rem;
+      margin: 12rem 0 0 0;
     }
     @include respond(desktop) {
-      margin: 12rem 0 0 30rem;
+      margin: 12rem 0 0 0;
     }
     @include respond(tab-land) {
-      margin: 10rem 0 0 25rem;
+      margin: 8rem 0 0 0;
     }
     @include respond(tab-port) {
-      margin: 10rem 0 0 17rem;
+      margin: 8rem 0 0 0;
     }
     @include respond(phone) {
       padding: 0 0 0 1rem;
-      margin: 10rem 0 0 7rem;
+      margin: 6rem 0 0 0;
       transform: skewX(0deg);
       height: 48rem;
       width: 30rem;
