@@ -1,0 +1,49 @@
+@mixin projectsDescription {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  //   visibility: visible;
+}
+
+.project {
+  //   display: flex;
+  position: relative;
+  height: 20rem;
+  margin: 1rem;
+  &-description {
+    visibility: hidden;
+  }
+  &:hover {
+    .project {
+      &-image {
+        transform: scale(1.05);
+        opacity: 0.2;
+      }
+      &-description {
+        visibility: visible;
+      }
+    }
+  }
+  &-image {
+    height: inherit;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+  }
+
+  &-name {
+    @include projectsDescription;
+    top: 2rem;
+    left: 10rem;
+    text-decoration: underline;
+  }
+  &-technologies {
+    @include projectsDescription;
+    top: 5rem;
+    left: 12rem;
+  }
+  &-paragraph {
+    @include projectsDescription;
+    top: 8rem;
+    left: 6rem;
+  }
+}

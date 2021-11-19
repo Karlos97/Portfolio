@@ -1,0 +1,27 @@
+@import '../../../styles/variables.module.scss';
+
+.project-button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  left: 9.5rem;
+  top: 15rem;
+  margin: 0 4rem 0 4rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.6rem;
+  transition: 0.3s;
+  color: $buttonHoverCol;
+  border: 2px $buttonHoverCol solid;
+  background-color: inherit;
+
+  &:hover {
+    background-color: $buttonPrimaryCol;
+    color: $buttonHoverCol;
+    border: 2px $buttonPrimaryCol solid;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}

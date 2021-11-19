@@ -1,0 +1,7 @@
+@import '../../styles/variables.module.scss';
+
+.app {
+  height: 100vh;
+  background-color: $background-color-1;
+  overflow: hidden;
+}
