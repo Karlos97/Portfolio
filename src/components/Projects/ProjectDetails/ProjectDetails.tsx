@@ -3,8 +3,9 @@ import Button from '../../UI/Button/Button';
 import Modal from '../../UI/Modal/Modal';
 import classes from './ProjectDetails.module.scss';
 
-const ProjectDetails: React.FC<ProjectDetailsType> = ({
-  technologies,
+const ProjectDetails: React.FC<any> = ({
+  // const ProjectDetails: React.FC<ProjectDetailsType> = ({
+  technologiesLong,
   imgPath,
   imgAlt,
   projectName,
@@ -23,7 +24,7 @@ const ProjectDetails: React.FC<ProjectDetailsType> = ({
               Technologies
             </h3>
             <p className={classes['project-details-paragraph']}>
-              {technologies}
+              {technologiesLong}
             </p>
             <div>
               <Button>

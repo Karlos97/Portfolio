@@ -1,6 +1,7 @@
 import { ProjectType } from '../../../types';
 import Button from '../../UI/Button/Button';
 import classes from './Project.module.scss';
+
 const Project: React.FC<ProjectType> = ({
   technologies,
   imgPath,

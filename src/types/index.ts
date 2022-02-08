@@ -7,11 +7,15 @@ export type ProjectDetailsType = {
   imgPath: string;
   imgAlt?: string;
   projectName: string;
-  technologies: string;
+  technologiesShort: string;
+  technologiesLong: string;
   about?: string;
   liveHref?: string;
   codeHref?: string;
-  toggleShowProjectDetails: () => void;
+  show?: boolean;
+  id: string;
+  toggleShowProjectDetails?: () => void;
+  showProjectDetails?: () => void;
 };
 
 export type ProjectType = {
