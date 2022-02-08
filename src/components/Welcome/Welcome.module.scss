@@ -1,0 +1,16 @@
+@import '../../styles/variables.module.scss';
+@import '../../styles/mixins.module.scss';
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  color: $font-color-3;
+
+  &-button {
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+}

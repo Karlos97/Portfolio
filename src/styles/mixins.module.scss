@@ -1,3 +1,5 @@
+@import './variables.module.scss';
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
@@ -24,4 +26,12 @@
       @content;
     } //1920px
   }
+}
+
+@mixin header-weight {
+  font-weight: 200;
+}
+
+@mixin header-margin {
+  margin: $header-margin;
 }

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import '../styles/variables.module.scss';
+
+.hand-font-style {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.font-size-xxs {
+  font-size: $size-xxs;
+}
+
+.font-size-xs {
+  font-size: $size-xs;
+}
+
+.font-size-s {
+  font-size: $size-s;
+}
+
+.font-size-m {
+  font-size: $size-m;
+}
+
+.font-size-l {
+  font-size: $size-l;
+}
+
+.font-size-xl {
+  font-size: $size-xl;
+}

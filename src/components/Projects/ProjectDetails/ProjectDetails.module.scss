@@ -1,49 +1,64 @@
 @mixin projectsDescription {
   color: white;
   font-size: 2rem;
-  position: absolute;
+  // position: absolute;
   //   visibility: visible;
 }
+$h2-font-size: 2rem;
+$paragraph-font-size: 1.6rem;
 
-.project {
-  //   display: flex;
-  position: relative;
-  height: 20rem;
+.project-details {
+  display: flex;
+  flex-direction: row;
   margin: 1rem;
   &-description {
-    visibility: hidden;
-  }
-  &:hover {
-    .project {
-      &-image {
-        transform: scale(1.05);
-        opacity: 0.2;
+    height: 60rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-about {
+      padding: 2rem;
+      &-header {
+        text-align: center;
+        font-size: $h2-font-size;
       }
-      &-description {
-        visibility: visible;
+      &-paragraph {
+        font-size: $paragraph-font-size;
       }
     }
   }
-  &-image {
-    height: inherit;
+
+  &-container {
+    display: flex;
+    height: 60rem;
+    width: 50%;
     border-radius: 0.5rem;
-    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    &-img {
+      height: 43rem;
+    }
   }
 
   &-name {
-    @include projectsDescription;
-    top: 2rem;
-    left: 10rem;
-    text-decoration: underline;
+    font-size: 3rem;
   }
   &-technologies {
-    @include projectsDescription;
-    top: 5rem;
-    left: 12rem;
+    font-size: $h2-font-size;
   }
   &-paragraph {
-    @include projectsDescription;
-    top: 8rem;
-    left: 6rem;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
   }
+}
+
+.button {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
 }

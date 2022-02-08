@@ -1,0 +1,8 @@
+@import '../../styles/variables.module.scss';
+
+.separator {
+  &-vertical {
+    width: 100%;
+    border-bottom: 1px $font-color-1 solid;
+  }
+}

@@ -1,10 +1,41 @@
 @import './variables.module.scss';
+@import './mixins.module.scss';
+
 html {
   font-size: 62.5%; //1 rem = 10px;
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #212529;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $buttonPrimaryCol;
+  }
 }
+
 body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
+  color: $font-color-3;
+
+  h1,
+  h2,
+  h3 {
+    @include header-weight;
+    @include header-margin;
+  }
+
+  h4 {
+    @include header-weight;
+  }
 }

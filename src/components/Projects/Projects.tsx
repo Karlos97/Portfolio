@@ -1,10 +1,19 @@
+import { useState } from 'react';
 import metapakTaskImage from '../../images/projects/github-users.png';
 import Project from './Project/Project';
+import ProjectDetails from './ProjectDetails/ProjectDetails';
 import classes from './Projects.module.scss';
+
 const Projects: React.FC = () => {
-  const onShowProjectDetailsHandler = () => {
-    console.log('1');
+  const [showMetapakTaskDetails, setShowMetapakTaskDetails] = useState(false);
+
+  const onToggleShowProjectDetailsHandler = () => {
+    console.log('ustawiam', !showMetapakTaskDetails);
+    setShowMetapakTaskDetails(!showMetapakTaskDetails);
   };
+  // const hideCreateUserSummaryHandler = () => {
+  //   setCreateUserSummaryIsShown(false);
+  // };
   return (
     <section className={classes['projects']}>
       <div className="projects-bg" />
@@ -14,15 +23,29 @@ const Projects: React.FC = () => {
         imgPath={metapakTaskImage}
         imgAlt="github list"
         projectName="Github Users App"
-        showProjectDetails={onShowProjectDetailsHandler}
+        showProjectDetails={onToggleShowProjectDetailsHandler}
       />
       <Project
         technologies="React | Redux | Typescript"
         imgPath={metapakTaskImage}
         imgAlt="github list"
         projectName="Github Users App"
-        showProjectDetails={onShowProjectDetailsHandler}
+        showProjectDetails={onToggleShowProjectDetailsHandler}
       />
+
+      {showMetapakTaskDetails && (
+        <ProjectDetails
+          toggleShowProjectDetails={onToggleShowProjectDetailsHandler}
+          imgPath={metapakTaskImage}
+          projectName="Github Users App"
+          imgAlt="github list"
+          codeHref="https://github.com/Karlos97/METAPAK-task-public"
+          liveHref="https://karlos97.github.io/METAPAK-task-public/"
+          technologies="React | Redux | Typescript | Scss | Ajax | Routing | RWD |Eslint + Prettier"
+          about="Projekt wykonany pod zadany layout, strona jest responsywna, szczegoly zadania znajduja sie w readme_2 oraz design.pdf."
+        />
+      )}
+
       {/* <a
         href="https://karlos97.github.io/METAPAK-task-public/"
         className="projects-slider-slide"
