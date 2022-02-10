@@ -1,12 +1,14 @@
+@import '../../../styles/variables.module.scss';
+
 @mixin projectsDescription {
   color: white;
   font-size: 2rem;
   position: absolute;
-  //   visibility: visible;
+  text-align: center;
+  width: 40rem;
 }
 
 .project {
-  //   display: flex;
   position: relative;
   height: 20rem;
   margin: 1rem;
@@ -21,36 +23,38 @@
       }
       &-description {
         visibility: visible;
+        display: flex;
       }
     }
   }
   &-image {
-    height: inherit;
+    height: 20rem;
+    width: 40rem;
     border-radius: 0.5rem;
     transition: all 0.5s ease;
   }
 
   &-name {
     @include projectsDescription;
-    top: 2rem;
-    left: 10rem;
     text-decoration: underline;
+    top: 2rem;
   }
   &-technologies {
     @include projectsDescription;
     top: 5rem;
-    left: 12rem;
   }
   &-paragraph {
     @include projectsDescription;
     top: 8rem;
-    left: 6rem;
   }
   &-button {
     &-wrapper {
+      width: 40rem;
       position: absolute;
-      left: 9.5rem;
+      left: 0;
       top: 15rem;
+      display: flex;
+      justify-content: center;
     }
     &-text {
       padding: 1rem;

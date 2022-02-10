@@ -70,23 +70,32 @@
 .about-icon {
   @include logoSize;
   // height: 4.15rem;
-
   &:hover,
   &-active {
     @include svgHover($svg-hover-green);
   }
 }
-.linked-in-icon {
+
+.images-icon {
   @include logoSize;
   &:hover,
   &-active {
     @include svgHover($svg-hover-red);
   }
 }
-.github-icon {
+
+.linked-in-icon {
   @include logoSize;
   &:hover,
   &-active {
     @include svgHover($svg-hover-green);
+  }
+}
+
+.github-icon {
+  @include logoSize;
+  &:hover,
+  &-active {
+    @include svgHover($svg-hover-red);
   }
 }

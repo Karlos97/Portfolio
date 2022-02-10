@@ -10,10 +10,14 @@ const Projects: React.FC = () => {
 
   const onToggleShowProjectDetailsHandler = (project: ProjectDetailsType) => {
     setLockedProjectsData([
-      ...lockedProjectsData.filter((proj) => proj.id !== project.id),
-      { ...project, show: project.show ? !project.show : true },
+      ...lockedProjectsData.map((proj) => {
+        return proj.id !== project.id
+          ? proj
+          : { ...project, show: project.show ? !project.show : true };
+      }),
     ]);
   };
+
   return (
     <section className={classes['projects']}>
       <div className="projects-bg" />
@@ -22,11 +26,11 @@ const Projects: React.FC = () => {
         <>
           <Project
             key={`projects-mini-${project.id}`}
-            technologies={project.technologiesShort}
+            technologiesShort={project.technologiesShort}
             imgPath={project.imgPath}
             imgAlt={project.imgAlt}
             projectName={project.projectName}
-            showProjectDetails={() =>
+            toggleShowProjectDetails={() =>
               onToggleShowProjectDetailsHandler(project)
             }
           />
@@ -50,4 +54,5 @@ const Projects: React.FC = () => {
     </section>
   );
 };
+
 export default Projects;

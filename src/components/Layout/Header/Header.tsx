@@ -6,10 +6,12 @@ import aboutIcon from '../../../images/about.svg';
 import projectsIcon from '../../../images/projects.svg';
 import githubIcon from '../../../images/github.svg';
 import logoIcon from '../../../images/logo.svg';
-import HomeIcon from '../../../images/home.svg';
+import homeIcon from '../../../images/home.svg';
+import imagesIcon from '../../../images/images.svg';
 import {
   aboutPathName,
   appPathName,
+  imagesPathName,
   projectsPathName,
 } from '../../../config/config';
 import { NavLink } from 'react-router-dom';
@@ -32,7 +34,7 @@ const Header: React.FC = () => (
               to={appPathName}
               exact
             >
-              <img src={HomeIcon} className={classes['home-icon']} />
+              <img src={homeIcon} className={classes['home-icon']} />
             </NavLink>
           </li>
           <li>
@@ -51,6 +53,15 @@ const Header: React.FC = () => (
               to={aboutPathName}
             >
               <img src={aboutIcon} className={classes['about-icon']} />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClassName={classes['images-icon-active']}
+              className={classes['images-icon']}
+              to={imagesPathName}
+            >
+              <img src={imagesIcon} className={classes['projects-icon']} />
             </NavLink>
           </li>
           <li>
