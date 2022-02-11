@@ -3,8 +3,13 @@ import Header from './Header/Header';
 import classes from './Layout.module.scss';
 import Start from './Start/Start';
 import { logosTimeDismissLoadingPage } from '../../config/config';
+import { LanguageType } from '../../types';
 
-const Layout: React.FC = ({ children }) => {
+const Layout: React.FC<LanguageType> = ({
+  children,
+  language,
+  handleLanguageChange,
+}) => {
   const [showLogoAtThePageLoad, setShowLogoAtThePageLoad] = useState(true);
 
   useEffect(() => {
@@ -12,11 +17,15 @@ const Layout: React.FC = ({ children }) => {
       setShowLogoAtThePageLoad(false);
     }, logosTimeDismissLoadingPage);
   });
+
   return (
     <>
       {!showLogoAtThePageLoad && (
         <div className={classes.app}>
-          <Header />
+          <Header
+            language={language}
+            handleLanguageChange={handleLanguageChange}
+          />
           <main className={classes.main}>{children}</main>
         </div>
       )}

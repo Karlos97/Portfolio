@@ -12,17 +12,24 @@ import {
 } from './config/config';
 import './styles/Home.module.scss';
 import Welcome from './components/Welcome/Welcome';
+import { useState } from 'react';
 
 const Home: React.FC = () => {
+  const [language, setLanguage] = useState('pl');
+
+  const onHandleLanguageChange = (language: string) => {
+    setLanguage(language);
+  };
+
   return (
     <BrowserRouter>
-      <Layout>
+      <Layout language={language} handleLanguageChange={onHandleLanguageChange}>
         <Switch>
           <Route path={appPathName} exact>
-            <Welcome />
+            <Welcome language={language} />
           </Route>
           <Route path={aboutPathName}>
-            <About />
+            <About language={language} />
           </Route>
           <Route path={skillsPathName}>
             <h1>Coming soon...</h1>
@@ -31,10 +38,10 @@ const Home: React.FC = () => {
             <h1>Coming soon...</h1>
           </Route>
           <Route path={projectsPathName}>
-            <Projects />
+            <Projects language={language} />
           </Route>
           <Route path="*">
-            <NotFound />
+            <NotFound language={language} />
           </Route>
         </Switch>
       </Layout>

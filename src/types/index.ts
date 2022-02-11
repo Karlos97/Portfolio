@@ -23,3 +23,8 @@ export type ProjectType = {
   technologiesShort?: string;
   toggleShowProjectDetails: () => void;
 };
+
+export type LanguageType = {
+  language: string;
+  handleLanguageChange?: (language: string) => void;
+};

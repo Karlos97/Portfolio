@@ -8,6 +8,8 @@ import githubIcon from '../../../images/github.svg';
 import logoIcon from '../../../images/logo.svg';
 import homeIcon from '../../../images/home.svg';
 import imagesIcon from '../../../images/images.svg';
+import polandFlag from '../../../images/flags/Poland.svg';
+import ukFlag from '../../../images/flags/UK.svg';
 import {
   aboutPathName,
   appPathName,
@@ -16,8 +18,12 @@ import {
 } from '../../../config/config';
 import { NavLink } from 'react-router-dom';
 import Separator from '../../Separator/Separator';
+import { LanguageType } from '../../../types';
 
-const Header: React.FC = () => (
+const Header: React.FC<LanguageType> = ({
+  language = 'pl',
+  handleLanguageChange = () => null,
+}) => (
   <div className={classes['header-wrapper']}>
     <header className={classes['header']}>
       <NavLink to={appPathName} className={classes['logo-link']} exact>
@@ -27,6 +33,20 @@ const Header: React.FC = () => (
       </NavLink>
       <nav>
         <ul className={classes.navigation}>
+          {language == 'eng' ? (
+            <img
+              src={polandFlag}
+              onClick={() => handleLanguageChange('pl')}
+              className={classes['navigation-flag']}
+            />
+          ) : null}
+          {language == 'pl' ? (
+            <img
+              src={ukFlag}
+              onClick={() => handleLanguageChange('eng')}
+              className={classes['navigation-flag']}
+            />
+          ) : null}
           <li>
             <NavLink
               activeClassName={classes['home-icon-active']}
