@@ -45,7 +45,12 @@
     &-img {
       max-width: 90%;
       max-height: 90%;
+      border-radius: 0.5rem;
       box-shadow: 1px 1px 5px black;
+      &:hover {
+        transform: scale(1.02);
+        transition: 0.5s;
+      }
     }
   }
 
@@ -63,6 +68,7 @@
 
 .button {
   text-decoration: none;
+  display: contents;
   color: inherit;
   padding: 1rem;
 }

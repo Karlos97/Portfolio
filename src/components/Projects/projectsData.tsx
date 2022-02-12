@@ -7,16 +7,28 @@ import qarsonCarrApp from '../../images/projects/qrson-car-app.png';
 import warsawExpoApp from '../../images/projects/warsaw-expo-app.png';
 import expensesApp from '../../images/projects/expenses.png';
 import scrTaskApp from '../../images/projects/scrTask.png';
+import graphQL from '../../images/graphQL.png';
 
 export const projectsData: ProjectDetailsType[] = [
   {
-    technologiesShort: 'React | Typescript | Redux',
+    technologiesShort: 'React | GraphQL | Scss',
+    technologiesLong: 'React | GraphQL | Scss | Routing',
+    imgPath: graphQL,
+    imgAlt: 'forum',
+    projectName: 'Graphql-App',
+    codeHref: 'https://github.com/Karlos97/graphql-first-steps',
+    liveHref: '',
+    show: false,
+    id: '991',
+  },
+  {
+    technologiesShort: 'React | React Testing Library | Typescript',
     technologiesLong:
-      'React | Typescript | Redux | Scss | Ajax | Routing | RWD | Eslint + Prettier',
+      'React | React Testing Library | Typescript | Redux | Scss | Ajax | Routing | RWD | Eslint + Prettier',
     imgPath: metapakTaskImage,
     imgAlt: 'Users list',
     projectName: 'Github-Users-App',
-    codeHref: 'https://github.com/Karlos97/METAPAK-task',
+    codeHref: 'https://github.com/Karlos97/METAPAK-task/tree/tsx',
     liveHref: 'https://karlos97.github.io/METAPAK-task/',
     show: false,
     id: '992',

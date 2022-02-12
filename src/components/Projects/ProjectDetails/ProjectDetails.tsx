@@ -42,16 +42,28 @@ const ProjectDetails: React.FC<DetailsType & LanguageType> = ({
                 {technologiesLong}
               </p>
               <div>
-                <Button>
-                  <a href={liveHref} target="_blank" className={classes.button}>
-                    LIVE
-                  </a>
-                </Button>
-                <Button>
-                  <a href={codeHref} target="_blank" className={classes.button}>
-                    CODE
-                  </a>
-                </Button>
+                {liveHref && (
+                  <Button>
+                    <a
+                      href={liveHref}
+                      target="_blank"
+                      className={classes.button}
+                    >
+                      LIVE
+                    </a>
+                  </Button>
+                )}
+                {codeHref && (
+                  <Button>
+                    <a
+                      href={codeHref}
+                      target="_blank"
+                      className={classes.button}
+                    >
+                      CODE
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
             <div className={classes['project-details-description-about']}>
@@ -70,11 +82,13 @@ const ProjectDetails: React.FC<DetailsType & LanguageType> = ({
             </div>
           </div>
           <div className={classes['project-details-container']}>
-            <img
-              className={classes['project-details-container-img']}
-              src={imgPath}
-              alt={imgAlt}
-            />
+            <a href={liveHref} target="_blank" className={classes.button}>
+              <img
+                className={classes['project-details-container-img']}
+                src={imgPath}
+                alt={imgAlt}
+              />
+            </a>
           </div>
         </div>
       </Suspense>

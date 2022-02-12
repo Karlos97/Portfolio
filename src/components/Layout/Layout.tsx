@@ -4,6 +4,7 @@ import classes from './Layout.module.scss';
 import Start from './Start/Start';
 import { logosTimeDismissLoadingPage } from '../../config/config';
 import { LanguageType } from '../../types';
+import Footer from './Footer/Footer';
 
 const Layout: React.FC<LanguageType> = ({
   children,
@@ -27,6 +28,7 @@ const Layout: React.FC<LanguageType> = ({
             handleLanguageChange={handleLanguageChange}
           />
           <main className={classes.main}>{children}</main>
+          <Footer />
         </div>
       )}
       {showLogoAtThePageLoad && <Start />}

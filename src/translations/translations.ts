@@ -12,13 +12,15 @@ const translationsEn = {
   },
   projects: {
     technologies: 'Technologies',
+    projectAboutId991:
+      'Task is based on materials which comes from graphql documentation page. Page shows forum which uses most advantages of graphql query language.',
     projectAboutId992:
-      'Project was done according to exact layout, page is responsive with pagination. Page is about fetching gthub users list and print them on the screen. More details You can see in readme_2 and design.pdf file.',
+      "Project was done according to exact layout, page is responsive with pagination. Page is about fetching gthub users list and print them on the screen. There's also as addition couple tests with react testing library. More details You can see in readme_2 and design.pdf file.",
     projectAboutId993:
       "Project was done according to requirements from task. Page is about fetching books from the server and print them on the screen. There's also pagination.",
     projectAboutId994: 'Project was done according to requirements from task.',
     projectAboutId995:
-      'Project to split expenses f.e. if small group of people go on the vacation where they pay often for someone elese. App let to create summary which split this expenses on the persons and print how much they owe or how much someone owes them.',
+      'Project which helps to split expenses f.e. if small group of people go on the vacation where they pay often for someone elese. App let to create summary which split this expenses by the persons and print how much they owe or how much someone owes them.',
     projectAboutId996:
       "Project was done according to requirements from task. As addition there's possibility to sort by name.",
     projectAboutId997:
@@ -67,8 +69,10 @@ const translationsPl = {
   },
   projects: {
     technologies: 'Technologie',
+    projectAboutId991:
+      "Zadanie oparte o materialy dostepne na stronie z dokumentacja graphql. Strona przedstawia forum, ktore wykorzystuje wiekszosc zalet graphql'a.",
     projectAboutId992:
-      'Projekt wykonany pod zadany layout, strona jest responsywna oraz posiada paginacje. Pobierana oraz wyswietlana jest lista uzytkownikow serwisu github. Szczegoly zadania znajduja sie w readme_2 oraz design.pdf.',
+      'Projekt wykonany pod zadany layout, strona jest responsywna oraz posiada paginacje. Pobierana oraz wyswietlana jest lista uzytkownikow serwisu github. W aplikacji zostalo dodanych rowniez kilka testow z React Testing Library. Szczegoly zadania znajduja sie w readme_2 oraz design.pdf.',
     projectAboutId993:
       'Projekt wykonany zgodnie z technologiami wymaganymi w zadaniu. Pobierana oraz wyswietlana jest lista ksiazek, dodana zostala rowniez paginacja.',
     projectAboutId994:
