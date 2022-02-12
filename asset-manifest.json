@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.26c2140b.chunk.css",
+    "main.js": "/Portfolio/static/js/main.262c34ab.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.262c34ab.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.5d68f097.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5d68f097.js.map",
+    "static/js/2.3d936e73.chunk.js": "/Portfolio/static/js/2.3d936e73.chunk.js",
+    "static/js/2.3d936e73.chunk.js.map": "/Portfolio/static/js/2.3d936e73.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.26c2140b.chunk.css.map": "/Portfolio/static/css/main.26c2140b.chunk.css.map",
+    "static/js/2.3d936e73.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3d936e73.chunk.js.LICENSE.txt",
+    "static/media/Poland.63742e8e.svg": "/Portfolio/static/media/Poland.63742e8e.svg",
+    "static/media/UK.5aa2f382.svg": "/Portfolio/static/media/UK.5aa2f382.svg",
+    "static/media/about.e20417ee.svg": "/Portfolio/static/media/about.e20417ee.svg",
+    "static/media/book-app.1bda632a.png": "/Portfolio/static/media/book-app.1bda632a.png",
+    "static/media/expenses.dcd79eda.png": "/Portfolio/static/media/expenses.dcd79eda.png",
+    "static/media/github-users.2e47162d.png": "/Portfolio/static/media/github-users.2e47162d.png",
+    "static/media/github.74cd256b.svg": "/Portfolio/static/media/github.74cd256b.svg",
+    "static/media/graphQL.a3b9834a.png": "/Portfolio/static/media/graphQL.a3b9834a.png",
+    "static/media/home.5c4f40d6.svg": "/Portfolio/static/media/home.5c4f40d6.svg",
+    "static/media/images.ff121afe.svg": "/Portfolio/static/media/images.ff121afe.svg",
+    "static/media/linkedin.83076a95.svg": "/Portfolio/static/media/linkedin.83076a95.svg",
+    "static/media/logo.127c49f5.svg": "/Portfolio/static/media/logo.127c49f5.svg",
+    "static/media/moneySplitter_1.295b2697.png": "/Portfolio/static/media/moneySplitter_1.295b2697.png",
+    "static/media/projects.d5884321.svg": "/Portfolio/static/media/projects.d5884321.svg",
+    "static/media/qrson-car-app.eab98fca.png": "/Portfolio/static/media/qrson-car-app.eab98fca.png",
+    "static/media/scrTask.49bae2f4.png": "/Portfolio/static/media/scrTask.49bae2f4.png",
+    "static/media/search-list.03e48add.png": "/Portfolio/static/media/search-list.03e48add.png",
+    "static/media/warsaw-expo-app.cfdfc33f.png": "/Portfolio/static/media/warsaw-expo-app.cfdfc33f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d68f097.js",
+    "static/js/2.3d936e73.chunk.js",
+    "static/css/main.26c2140b.chunk.css",
+    "static/js/main.262c34ab.chunk.js"
+  ]
+}
