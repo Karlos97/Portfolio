@@ -3,13 +3,12 @@
   justify-content: center;
   background-color: #8976b1;
   font-size: 1.4rem;
-  // color: $btn-font-color;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   &__copyright {
-    // border-top: 1px solid $color-dark-grey-1;
     padding-top: 0.5rem;
-    margin-left: 20%;
     display: flex;
     justify-self: flex-end;
-    margin-right: 1rem;
   }
 }

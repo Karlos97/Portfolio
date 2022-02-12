@@ -28,7 +28,7 @@ const Layout: React.FC<LanguageType> = ({
             handleLanguageChange={handleLanguageChange}
           />
           <main className={classes.main}>{children}</main>
-          <Footer />
+          <Footer language={language} />
         </div>
       )}
       {showLogoAtThePageLoad && <Start />}

@@ -55,6 +55,7 @@ const translationsEn = {
 
     footerText: 'I am eager to take on next challenges',
   },
+  footer: 'Created on the portfolio usage. All rights © reserverd.',
   notFound: 'Page not found!',
 };
 
@@ -118,6 +119,7 @@ const translationsPl = {
       '. Nauczylem sie podstaw gry na pianinie oraz tanca latino. Aktywnie ucze sie jezykow. Na ten moment Ukrainski i Rosyjki, pozniej planuje wznowic nauke Niemieckiego.',
     footerText: 'Chetnie podejme sie kolejnych wyzwan',
   },
+  footer: 'Stworzono na potrzeby portfolio. Prawa autorskie © zastrzeżone.',
   notFound: 'Strona o podanym linku nie istnieje!',
 };
 

@@ -6,7 +6,6 @@ import Projects from './components/Projects/Projects';
 import {
   aboutPathName,
   appPathName,
-  imagesPathName,
   projectsPathName,
   skillsPathName,
 } from './config/config';
@@ -32,9 +31,6 @@ const Home: React.FC = () => {
             <About language={language} />
           </Route>
           <Route path={skillsPathName}>
-            <h1>Coming soon...</h1>
-          </Route>
-          <Route path={imagesPathName}>
             <h1>Coming soon...</h1>
           </Route>
           <Route path={projectsPathName}>

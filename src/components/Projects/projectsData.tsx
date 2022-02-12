@@ -7,7 +7,7 @@ import qarsonCarrApp from '../../images/projects/qrson-car-app.png';
 import warsawExpoApp from '../../images/projects/warsaw-expo-app.png';
 import expensesApp from '../../images/projects/expenses.png';
 import scrTaskApp from '../../images/projects/scrTask.png';
-import graphQL from '../../images/graphQL.png';
+import graphQL from '../../images/projects/graphQL.png';
 
 export const projectsData: ProjectDetailsType[] = [
   {
