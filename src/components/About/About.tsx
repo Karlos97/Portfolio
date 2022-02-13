@@ -19,9 +19,6 @@ const About: React.FC<LanguageType> = ({ language }) => {
       <div
         className={`${classes.about} ${typographyClasses['hand-font-style']}`}
       >
-        <h1
-          className={`${classes['about-header']} ${typographyClasses['font-size-xl']}`}
-        ></h1>
         <div
           className={`${classes['about-quote']} ${typographyClasses['font-size-xs']}`}
         >
@@ -31,7 +28,9 @@ const About: React.FC<LanguageType> = ({ language }) => {
           </span>
         </div>
         <Separator width="85%" />
-        <h1 className={typographyClasses['font-size-s']}>
+        <h1
+          className={`${typographyClasses['font-size-s']} ${typographyClasses['text-align-center']}`}
+        >
           {t('about.aboutHeader')}
         </h1>
 

@@ -1,4 +1,5 @@
 @import '../../../styles/variables.module.scss';
+@import '../../../styles/mixins.module.scss';
 
 @mixin projectsDescription {
   color: white;
@@ -11,11 +12,18 @@
   justify-content: space-between;
   margin: 1rem;
   color: $font-color-4;
+  @include respond(phone) {
+    flex-direction: column;
+  }
   &-description {
     height: 60rem;
     width: 50%;
     display: flex;
     flex-direction: column;
+    @include respond(phone) {
+      width: 100%;
+      height: 50%;
+    }
     &-info {
       display: flex;
       flex-direction: column;
@@ -42,11 +50,17 @@
     border-radius: 0.5rem;
     justify-content: center;
     align-items: center;
+    @include respond(phone) {
+      margin: 3rem 0;
+      width: 100%;
+      height: 50%;
+    }
     &-img {
       max-width: 90%;
       max-height: 90%;
       border-radius: 0.5rem;
       box-shadow: 1px 1px 5px black;
+      cursor: pointer;
       &:hover {
         transform: scale(1.02);
         transition: 0.5s;
@@ -68,7 +82,6 @@
 
 .button {
   text-decoration: none;
-  display: contents;
   color: inherit;
   padding: 1rem;
 }

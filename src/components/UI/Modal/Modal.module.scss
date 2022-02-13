@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.module.scss';
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -12,19 +14,24 @@
   position: fixed;
   top: 20vh;
   left: 5%;
-  width: auto;
+  width: 90%;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
-  animation: slide-down 300ms ease-out forwards;
-}
+  animation: slide-down 700ms ease-out forwards;
 
-@media (min-width: 768px) {
-  .modal {
-    width: 90%;
+  @include respond(tab-land) {
     left: 4.5%;
+  }
+
+  @include respond(tab-port) {
+    left: 3.5%;
+  }
+
+  @include respond(phone) {
+    left: 2.5%;
   }
 }
 
