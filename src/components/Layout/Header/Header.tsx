@@ -1,12 +1,6 @@
 import React from 'react';
 import classes from './Header.module.scss';
-
-import linkedInIcon from '../../../images/linkedin.svg';
-import aboutIcon from '../../../images/about.svg';
-import projectsIcon from '../../../images/projects.svg';
-import githubIcon from '../../../images/github.svg';
 import logoIcon from '../../../images/logo.svg';
-import homeIcon from '../../../images/home.svg';
 import polandFlag from '../../../images/flags/Poland.svg';
 import ukFlag from '../../../images/flags/UK.svg';
 import {
@@ -17,6 +11,7 @@ import {
 import { NavLink } from 'react-router-dom';
 import Separator from '../../Separator/Separator';
 import { LanguageType } from '../../../types';
+import Icon from './Icons/Icon';
 
 const Header: React.FC<LanguageType> = ({
   language = 'pl',
@@ -52,16 +47,16 @@ const Header: React.FC<LanguageType> = ({
               to={appPathName}
               exact
             >
-              <img src={homeIcon} className={classes['home-icon']} />
+              <Icon icon="home" />
             </NavLink>
           </li>
           <li>
             <NavLink
-              activeClassName={classes['projects-icon-active']}
-              className={classes['projects-icon']}
+              activeClassName={classes['folder-icon-active']}
+              className={classes['folder-icon']}
               to={projectsPathName}
             >
-              <img src={projectsIcon} className={classes['projects-icon']} />
+              <Icon icon="folder-open" />
             </NavLink>
           </li>
           <li>
@@ -70,17 +65,25 @@ const Header: React.FC<LanguageType> = ({
               className={classes['about-icon']}
               to={aboutPathName}
             >
-              <img src={aboutIcon} className={classes['about-icon']} />
+              <Icon icon="file-text2" />
             </NavLink>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/karol-minta/" target="_blank">
-              <img src={linkedInIcon} className={classes['linked-in-icon']} />
+            <a
+              className={classes['linkedin-icon']}
+              href="https://www.linkedin.com/in/karol-minta/"
+              target="_blank"
+            >
+              <Icon icon="linkedin" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Karlos97" target="_blank">
-              <img src={githubIcon} className={classes['github-icon']} />
+            <a
+              className={classes['github-icon']}
+              href="https://github.com/Karlos97"
+              target="_blank"
+            >
+              <Icon icon="github" />
             </a>
           </li>
         </ul>

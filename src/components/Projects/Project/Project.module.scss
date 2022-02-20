@@ -1,17 +1,35 @@
 @import '../../../styles/variables.module.scss';
 
+$respond-project-tab-land-width: 39rem;
+$respond-project-tab-port-width: 37rem;
+$respond-project-phone-width: 35rem;
+
 @mixin projectsDescription {
   color: white;
   font-size: 2rem;
   position: absolute;
   text-align: center;
   width: 40rem;
+
+  @include respond(tab-land) {
+    width: $respond-project-tab-land-width;
+    font-size: 1.85rem;
+  }
+  @include respond(tab-port) {
+    width: $respond-project-tab-port-width;
+    font-size: 1.7rem;
+  }
+  @include respond(phone) {
+    width: $respond-project-phone-width;
+    font-size: 1.6rem;
+  }
 }
 
 .project {
   position: relative;
   height: 20rem;
   margin: 1rem;
+
   &-description {
     visibility: hidden;
   }
@@ -32,6 +50,16 @@
     width: 40rem;
     border-radius: 0.5rem;
     transition: all 0.5s ease;
+
+    @include respond(tab-port) {
+      width: $respond-project-tab-land-width;
+    }
+    @include respond(tab-port) {
+      width: $respond-project-tab-port-width;
+    }
+    @include respond(phone) {
+      width: $respond-project-phone-width;
+    }
   }
 
   &-name {
@@ -55,6 +83,16 @@
       top: 15rem;
       display: flex;
       justify-content: center;
+
+      @include respond(tab-land) {
+        width: $respond-project-tab-land-width;
+      }
+      @include respond(tab-port) {
+        width: $respond-project-tab-port-width;
+      }
+      @include respond(phone) {
+        width: $respond-project-phone-width;
+      }
     }
     &-text {
       padding: 1rem;

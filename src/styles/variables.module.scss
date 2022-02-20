@@ -1,3 +1,5 @@
+@import './mixins.module.scss';
+
 $background-color-1: #292929;
 $background-color-2: #969a9d;
 $font-color-1: #eec201;
@@ -5,25 +7,21 @@ $font-color-2: #fae12c;
 $font-color-3: #e3e6e9;
 $font-color-4: #222020;
 
-$logo-color-1: #fe3e54;
-$logo-color-2: #00e85be6;
+$logo-color: #e6e7e7;
 
-$svg-hover-green: invert(43%) sepia(94%) saturate(4139%) hue-rotate(331deg)
-  brightness(101%) contrast(99%);
-$svg-hover-red: invert(55%) sepia(94%) saturate(577%) hue-rotate(93deg)
-  brightness(100%) contrast(105%);
+$svg-hover-green: #00e85be6;
+$svg-hover-red: #fe3e54;
 
 $buttonPrimaryCol: #e3e6e9;
-$buttonHoverCol-red: #000;
-$buttonHoverCol-green: #00e85be6;
-$buttonHoverBg-red: rgb(195, 143, 255);
-$buttonHoverBg-green: #1be96ee6;
+$buttonFontCol: #000;
+$buttonBg: rgb(195, 143, 255);
 
-$size-xxs: 1.4rem;
-$size-xs: 2rem;
-$size-s: 2.7rem;
-$size-m: 3.3rem;
-$size-l: 3.8rem;
-$size-xl: 4.5rem;
+$size-xxs: 1.2vmax;
+$size-xs: 1.4vmax;
+$size-s: 2.4vmax;
+$size-m: 2.5vmax;
+$size-l: 2.6vmax;
+$size-xl: 2.8vmax;
 
-$header-margin: 1.5rem 0;
+$header-margin: 0.8vw 0;
+$header-weight: 200;

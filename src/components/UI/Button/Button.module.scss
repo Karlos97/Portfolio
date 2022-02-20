@@ -4,14 +4,29 @@
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  margin: 0 4rem 0 4rem;
+  margin: 0 4rem;
   border-radius: 0.5rem;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
   font-size: 1.6rem;
   transition: 0.1s ease-in;
-  color: $buttonHoverCol-red;
-  background-color: $buttonHoverBg-red;
-  border: 2px $buttonHoverBg-red solid;
+  color: buttonFontCol;
+  background-color: $buttonBg;
+  border: 2px $buttonBg solid;
+
+  @include respond(tab-land) {
+    font-size: 1.4rem;
+    margin: 0 3rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+  }
 
   &:hover {
     transform: scale(1.05);

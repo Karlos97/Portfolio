@@ -20,7 +20,7 @@ const About: React.FC<LanguageType> = ({ language }) => {
         className={`${classes.about} ${typographyClasses['hand-font-style']}`}
       >
         <div
-          className={`${classes['about-quote']} ${typographyClasses['font-size-xs']}`}
+          className={`${classes['about-quote']} ${typographyClasses['font-size-xxs']}`}
         >
           <q>{t('about.quote')}</q>
           <span className={classes['about-quote-author']}>
@@ -29,34 +29,34 @@ const About: React.FC<LanguageType> = ({ language }) => {
         </div>
         <Separator width="85%" />
         <h1
-          className={`${typographyClasses['font-size-s']} ${typographyClasses['text-align-center']}`}
+          className={`${typographyClasses['font-size-xs']} ${typographyClasses['text-align-center']}`}
         >
           {t('about.aboutHeader')}
         </h1>
 
-        <ul className={typographyClasses['font-size-xs']}>
+        <ul className={typographyClasses['font-size-xxs']}>
           <li>{t('about.listItem1')}</li>
           <li>{t('about.listItem2')}</li>
         </ul>
         <h2 className={typographyClasses['font-size-m']}>
           {t('about.schoolHeader')}
         </h2>
-        <p className={typographyClasses['font-size-xs']}>
+        <p className={typographyClasses['font-size-xxs']}>
           {t('about.schoolDescription')}
         </p>
         <h2 className={typographyClasses['font-size-m']}>
           {t('about.professionHeader')}
         </h2>
-        <p className={typographyClasses['font-size-xs']}>
+        <p className={typographyClasses['font-size-xxs']}>
           {t('about.professionDescriptionAutomation')}
         </p>
-        <p className={typographyClasses['font-size-xs']}>
+        <p className={typographyClasses['font-size-xxs']}>
           {t('about.professionDescriptionIt')}
         </p>
         <h2 className={typographyClasses['font-size-m']}>
           {t('about.privatelyHeader')}
         </h2>
-        <p className={typographyClasses['font-size-xs']}>
+        <p className={typographyClasses['font-size-xxs']}>
           {t('about.privatelyDescriptionPart1')}
           <a href="https://en.wikipedia.org/wiki/Rysy" className={classes.link}>
             {t('about.privatelyDescriptionRysy')}
@@ -71,7 +71,7 @@ const About: React.FC<LanguageType> = ({ language }) => {
           {t('about.privatelyDescriptionPart3')}
         </p>
         <footer>
-          <h3 className={typographyClasses['font-size-xs']}>
+          <h3 className={typographyClasses['font-size-xxs']}>
             {t('about.footerText')}
             <Separator />
           </h3>

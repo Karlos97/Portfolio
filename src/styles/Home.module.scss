@@ -4,18 +4,6 @@
 html {
   font-size: 62.5%; //1 rem = 10px;
 
-  @include respond(tab-land) {
-    font-size: 56.25%; //1 rem = 9px;
-  }
-
-  @include respond(tab-port) {
-    font-size: 50%; //1 rem = 8px;
-  }
-
-  @include respond(phone) {
-    font-size: 43.75%; //1 rem = 7px;
-  }
-
   ::-webkit-scrollbar {
     width: 7px;
   }
@@ -42,12 +30,9 @@ body {
 
   h1,
   h2,
-  h3 {
-    @include header-weight;
-    @include header-margin;
-  }
-
+  h3,
   h4 {
-    @include header-weight;
+    margin: $header-margin;
+    font-weight: $header-weight;
   }
 }

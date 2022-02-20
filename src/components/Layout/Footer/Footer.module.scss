@@ -1,13 +1,20 @@
+@import '../../../styles/variables.module.scss';
+@import '../../../styles/mixins.module.scss';
+
 .footer {
   display: flex;
   justify-content: center;
   background-color: #8976b1;
-  font-size: 1.4rem;
+  font-size: 0.85vmax;
   position: absolute;
   width: 100%;
   bottom: 0;
+
+  @include respond(tab-port) {
+    font-size: 1vmax;
+  }
   &__copyright {
-    padding-top: 0.5rem;
+    padding-top: 0.2rem;
     display: flex;
     justify-self: flex-end;
   }

@@ -25,7 +25,7 @@ const Welcome: React.FC<LanguageType> = ({ language = 'pl' }) => {
         <h2 className={typographyClasses['font-size-l']}>{t('home.h2')}</h2>
         <h3 className={typographyClasses['font-size-m']}>{t('home.h3')}</h3>
         <h4 className={typographyClasses['font-size-s']}>{t('home.h4')}</h4>
-        <div>
+        <nav className={classes['welcome-navigation']}>
           <Button>
             <NavLink
               className={classes['welcome-button']}
@@ -39,7 +39,7 @@ const Welcome: React.FC<LanguageType> = ({ language = 'pl' }) => {
               {t('home.infoButtonText')}
             </NavLink>
           </Button>
-        </div>
+        </nav>
       </div>
     </Suspense>
   );

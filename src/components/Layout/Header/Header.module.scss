@@ -1,14 +1,4 @@
 @import '../../../styles/variables.module.scss';
-@import '../../../styles/mixins.module.scss';
-
-@mixin logoSize {
-  height: 4rem;
-  margin-right: 0.5rem;
-}
-@mixin svgHover($color) {
-  cursor: pointer;
-  filter: $color;
-}
 
 .header-wrapper {
   position: sticky;
@@ -34,22 +24,17 @@
     text-decoration: none;
   }
   &-icon {
-    @include logoSize;
-  }
-  &-text {
-    &--1 {
-      color: $logo-color-1;
-    }
-    &--2 {
-      color: $logo-color-2;
-    }
+    height: 4rem;
+    margin-right: 0.5rem;
   }
 }
+
 .navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style-type: none;
+
   &-flag {
     margin: 1rem;
     height: 2rem;
@@ -58,53 +43,21 @@
   }
 }
 
-.home-icon {
-  @include logoSize;
-  // height: 4.5rem;
-  &:hover,
-  &-active {
-    @include svgHover($svg-hover-green);
-  }
-}
-
-.projects-icon {
-  @include logoSize;
-  // height: 4.5rem;
-  &:hover,
-  &-active {
-    @include svgHover($svg-hover-red);
-  }
-}
-
-.about-icon {
-  @include logoSize;
-  // height: 4.15rem;
-  &:hover,
-  &-active {
-    @include svgHover($svg-hover-green);
-  }
-}
-
-.images-icon {
-  @include logoSize;
-  &:hover,
-  &-active {
-    @include svgHover($svg-hover-red);
-  }
-}
-
-.linked-in-icon {
-  @include logoSize;
-  &:hover,
-  &-active {
-    @include svgHover($svg-hover-green);
-  }
-}
-
+.home-icon,
+.about-icon,
 .github-icon {
-  @include logoSize;
+  color: $logo-color;
   &:hover,
   &-active {
-    @include svgHover($svg-hover-red);
+    color: $svg-hover-green;
+  }
+}
+
+.folder-icon,
+.linkedin-icon {
+  color: $logo-color;
+  &:hover,
+  &-active {
+    color: $svg-hover-red;
   }
 }

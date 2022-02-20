@@ -1,5 +1,4 @@
 @import '../../styles/variables.module.scss';
-@import '../../styles/mixins.module.scss';
 
 .welcome {
   display: flex;
@@ -7,9 +6,10 @@
   align-items: center;
   margin-top: 10rem;
   color: $font-color-3;
-
+  &-navigation {
+    margin-top: 4rem;
+  }
   &-button {
-    padding: 0.5rem 2rem;
     text-decoration: none;
     color: inherit;
   }

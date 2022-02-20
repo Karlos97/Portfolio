@@ -3,26 +3,25 @@ export type ImageType = {
   width?: number;
 };
 
-export type ProjectDetailsType = {
+type ProjectBaseDetails = {
   imgPath: string;
   imgAlt?: string;
   projectName: string;
   technologiesShort?: string;
+};
+
+export interface ProjectDetailsType extends ProjectBaseDetails {
   technologiesLong: string;
   about?: string;
   liveHref?: string;
   codeHref?: string;
   show?: boolean;
   id?: string;
-};
+}
 
-export type ProjectType = {
-  imgPath: string;
-  imgAlt?: string;
-  projectName: string;
-  technologiesShort?: string;
+export interface ProjectType extends ProjectBaseDetails {
   toggleShowProjectDetails: () => void;
-};
+}
 
 export type LanguageType = {
   language: string;

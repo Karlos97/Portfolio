@@ -11,17 +11,6 @@ import graphQL from '../../images/projects/graphQL.png';
 
 export const projectsData: ProjectDetailsType[] = [
   {
-    technologiesShort: 'React | GraphQL | Scss',
-    technologiesLong: 'React | GraphQL | Scss | Routing',
-    imgPath: graphQL,
-    imgAlt: 'forum',
-    projectName: 'Graphql-App',
-    codeHref: 'https://github.com/Karlos97/graphql-first-steps',
-    liveHref: '',
-    show: false,
-    id: '991',
-  },
-  {
     technologiesShort: 'React | React Testing Library | Typescript',
     technologiesLong:
       'React | React Testing Library | Typescript | Redux | Scss | Ajax | Routing | RWD | Eslint + Prettier',
@@ -31,7 +20,7 @@ export const projectsData: ProjectDetailsType[] = [
     codeHref: 'https://github.com/Karlos97/METAPAK-task/tree/tsx',
     liveHref: 'https://karlos97.github.io/METAPAK-task/',
     show: false,
-    id: '992',
+    id: '991',
   },
   {
     technologiesShort: 'React | Redux | Ajax',
@@ -41,6 +30,17 @@ export const projectsData: ProjectDetailsType[] = [
     projectName: 'Book-App',
     codeHref: 'https://github.com/Karlos97/FarmaProm-book-app',
     liveHref: 'https://karlos97.github.io/FarmaProm-book-app/',
+    show: false,
+    id: '992',
+  },
+  {
+    technologiesShort: 'React | GraphQL | Scss',
+    technologiesLong: 'React | GraphQL | Scss | Routing',
+    imgPath: graphQL,
+    imgAlt: 'forum',
+    projectName: 'Graphql-App',
+    codeHref: 'https://github.com/Karlos97/graphql-first-steps',
+    liveHref: '',
     show: false,
     id: '993',
   },
