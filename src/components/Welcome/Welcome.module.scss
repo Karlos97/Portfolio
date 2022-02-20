@@ -6,9 +6,60 @@
   align-items: center;
   margin-top: 10rem;
   color: $font-color-3;
+  padding: 1rem;
+
   &-navigation {
     margin-top: 4rem;
   }
+
+  &-h1 {
+    font-size: 3.8rem;
+
+    @include respond(tab-port) {
+      font-size: 3.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &-h2 {
+    font-size: 3.6rem;
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &-h3 {
+    font-size: 3.3rem;
+
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.1rem;
+    }
+  }
+
+  &-h4 {
+    font-size: 3rem;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
+  }
+
   &-button {
     text-decoration: none;
     color: inherit;

@@ -1,4 +1,4 @@
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter, Redirect } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
@@ -21,9 +21,12 @@ const Home: React.FC = () => {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Layout language={language} handleLanguageChange={onHandleLanguageChange}>
         <Switch>
+          <Route path="/" exact>
+            <Redirect to={appPathName} />
+          </Route>
           <Route path={appPathName} exact>
             <Welcome language={language} />
           </Route>
@@ -41,7 +44,7 @@ const Home: React.FC = () => {
           </Route>
         </Switch>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

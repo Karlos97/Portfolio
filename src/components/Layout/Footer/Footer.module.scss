@@ -5,14 +5,15 @@
   display: flex;
   justify-content: center;
   background-color: #8976b1;
-  font-size: 0.85vmax;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
+  font-size: $size-s;
 
   @include respond(tab-port) {
-    font-size: 1vmax;
+    font-size: $size-xxs;
   }
+
   &__copyright {
     padding-top: 0.2rem;
     display: flex;

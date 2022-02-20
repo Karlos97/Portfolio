@@ -6,22 +6,25 @@ $respond-project-phone-width: 35rem;
 
 @mixin projectsDescription {
   color: white;
-  font-size: 2rem;
   position: absolute;
   text-align: center;
   width: 40rem;
+  font-weight: bold;
+  font-size: $size-xl;
 
   @include respond(tab-land) {
     width: $respond-project-tab-land-width;
-    font-size: 1.85rem;
+    font-size: $size-l;
   }
+
   @include respond(tab-port) {
     width: $respond-project-tab-port-width;
-    font-size: 1.7rem;
+    font-size: $size-m;
   }
+
   @include respond(phone) {
     width: $respond-project-phone-width;
-    font-size: 1.6rem;
+    font-size: $size-s;
   }
 }
 
@@ -33,6 +36,7 @@ $respond-project-phone-width: 35rem;
   &-description {
     visibility: hidden;
   }
+
   &:hover {
     .project {
       &-image {
@@ -67,14 +71,17 @@ $respond-project-phone-width: 35rem;
     text-decoration: underline;
     top: 2rem;
   }
+
   &-technologies {
     @include projectsDescription;
     top: 5rem;
   }
+
   &-paragraph {
     @include projectsDescription;
     top: 8rem;
   }
+
   &-button {
     &-wrapper {
       width: 40rem;
@@ -87,13 +94,16 @@ $respond-project-phone-width: 35rem;
       @include respond(tab-land) {
         width: $respond-project-tab-land-width;
       }
+
       @include respond(tab-port) {
         width: $respond-project-tab-port-width;
       }
+
       @include respond(phone) {
         width: $respond-project-phone-width;
       }
     }
+
     &-text {
       padding: 1rem;
     }

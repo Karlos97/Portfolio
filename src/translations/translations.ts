@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 
 const translationsEn = {
   home: {
-    h1: 'Hi, my name is Minta Karol',
+    h1: 'Hi, my name is Karol',
     h2: 'more information about me and projects',
     h3: 'You will find by clicking buttons below',
     h4: 'or using menu above',
@@ -61,7 +61,7 @@ const translationsEn = {
 
 const translationsPl = {
   home: {
-    h1: 'Czesc, nazywam sie Minta Karol',
+    h1: 'Czesc, nazywam sie Karol',
     h2: 'wiecej informacji o mnie oraz projekty',
     h3: 'znajdziesz klikajac ponizsze przyciski',
     h4: 'lub korzystajac z gornego menu',
