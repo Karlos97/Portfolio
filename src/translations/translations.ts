@@ -35,7 +35,7 @@ const translationsEn = {
       'Develop a passion for learning. If you do, you will never cease to grow.',
     aboutHeader: 'My experience is wide, I can divide it on two branches:',
     listItem1: 'Experience in automation branch',
-    listItem2: 'Experience in IT(front-end) branch',
+    listItem2: 'Experience in IT branch',
     schoolHeader: 'University',
     schoolDescription:
       "I'm type of person which likes to fully use the time. That's why I've simultaneously studied at the university(non-stationary) and developed professionally. With this I've graduated Poznan University of Technology(Automation and Robotics) with scholarship. At the university I've participated in interesting projects, most interesting was based on Python and artificial neural networks.",
@@ -43,7 +43,7 @@ const translationsEn = {
     professionDescriptionAutomation:
       'Experience in automation branch I was gaining for 5 years. In my professional life I was working as maintenance specialist in maintenance department. My main tasks were about leading installation of processing machines(investor side), translating operator trainings, repairing and maintaining these machines. Further as younger autoamtion specialist I was creating algorithms to control water or gas processes. Some of my projects were about automating pumping station in capital city of Poland(Warsaw), automating railway stations buildings(BMS) and international project with set of relief valves ',
     professionDescriptionIt:
-      "Currenly I'm picking challenges in IT branch as front-end developer. A lot of my time I've spended on non commercial projects, that's why I'm proggressing fast. I've experience in such technologies: react, typescript, sassy or python. I know much more usefull frameworks like redux, react-router etc. Currently I'm developing writing tests with React Testing Library and GraphQL.",
+      "Currenly I'm picking challenges in IT branch as front-end developer. A lot of my time I've spended on non commercial projects, that's why I'm proggressing fast. I've experience in such technologies: react, typescript, sassy or python. I know much more usefull frameworks like redux, react-router etc. Currently I'm developing writing tests with React Testing Library, GraphQL and Node.js.",
     privatelyHeader: 'Privately',
     privatelyDescriptionPart1:
       "My personal life is not any different to professional. I live to the full. I like travelling and hiking, f.e. in last years I've reached ",
@@ -61,7 +61,71 @@ const translationsEn = {
 
 const translationsPl = {
   home: {
-    h1: 'Czesc, nazywam sie Karol',
+    h1: 'Cześć, nazywam sie Karol',
+    h2: 'więcej informacji o mnie oraz projekty',
+    h3: 'znajdziesz klikając poniższe przyciski',
+    h4: 'lub korzystając z górnego menu',
+    projectsButtonText: 'PROJEKTY',
+    infoButtonText: 'INFO',
+  },
+  projects: {
+    technologies: 'Technologie',
+    projectAboutId991:
+      "Zadanie oparte o materiały dostępne na stronie z dokumentacja graphql. Strona przedstawia forum, które wykorzystuje większość zalet graphql'a.",
+    projectAboutId992:
+      'Projekt wykonany pod zadany layout, strona jest responsywna oraz posiada paginację. Pobierana oraz wyświetlana jest lista użytkowników serwisu github. W aplikacji zostało dodanych również kilka testów z React Testing Library. Szczegóły zadania znajdują sie w readme_2 oraz design.pdf.',
+    projectAboutId993:
+      'Projekt wykonany zgodnie z technologiami wymaganymi w zadaniu. Pobierana oraz wyświetlana jest lista książek, dodana została również paginacja.',
+    projectAboutId994:
+      'Projekt wykonany zgodnie z technologiami wymaganymi w zadaniu.',
+    projectAboutId995:
+      'Projekt podziału wydatków np. dla grup wyjeżdżających na wakacje, gdzie za poszczególne wydatki płacą różne osoby. Pozwala ona stworzyć podsumowanie dla całej grupy na zasadzie dzielenia wartości którą każdy członek grupy powinien zwrócić lub otrzymać od reszty grupy.',
+
+    projectAboutId996:
+      'Projekt wykonany zgodnie z technologiami wymaganymi w zadaniu. Dodana została funkcja sortowania po nazwie.',
+
+    projectAboutId997:
+      'To-do app, w którym można dodawac, usuwać i odznaczać wykonane notatki. Dodatkowo wprowadzono sortowanie, możliwość stworzenia 3 tysięcy notatek i paginację.',
+
+    projectAboutId998:
+      'Jeden ze starszych projektów, który generuje wykres kołowy na podstawie wprowadzonych wydatków. Możliwość zapisania oraz wczytania danych do i z pamięci podręcznej. Zapisy są usuwane po upływie roku.',
+
+    projectAboutId999:
+      'Jeden ze starszych projektów, który generuje wykresy ganta w systemach czasu rzeczywistego.',
+  },
+  about: {
+    quote:
+      'Wykształć w sobie pasję do nauki. Jesli Ci się uda juz nigdy nie przestaniesz się rozwijać.',
+    aboutHeader:
+      'Moje doświadczenie jest rozległe, dlatego podzielę je na dwie branże:',
+
+    listItem1: 'Doświadczenie w branży automatyki',
+    listItem2: 'Doświadczenie w branży IT',
+    schoolHeader: 'Uczelnia',
+    schoolDescription:
+      'Jestem typem osoby, która lubi wykorzystywać swój czas w pełni. Dlatego rownólegle edukowałem się na uczelni(niestacjonarnie) oraz rozwijałem zawodowo. Dzięki temu ukonczyłem studia na Politechnice Poznańskiej z kierunku automatyki i robotyki uzyskując stypendium. Na uczelni podejmowałem się ciekawych projektów, najciekawsze z nich były związane z jezykiem Python oraz sztucznymi sieciami neuronowymi.',
+    professionHeader: 'Życie zawodowe',
+    professionDescriptionAutomation:
+      'Doświadczenie w branzy automatyki zdobywałem aktywnie przez 5 lat. W moim życiu zawodowym pracowałem jako specjalista utrzymania ruchu, gdzie moimi głownymi zadaniami było prowadzenie instalacji maszyn po stronie inwestora, naprawy i renowacje maszyn oraz tłumaczenie szkoleń operatorskich. Dalej jako specjalista ds. automatyki tworzyłem algorytmy sterujące procesami. Jednymi z moich projektów były: przepompownia wody w Warszawie, systemy BMS na dworcach PKP oraz międzynarodowy projekt stacji ZZU.',
+    professionDescriptionIt:
+      "Obecnie kolejne wyzwania podejmuję w branzy IT. Sporo czasu spedzilem na projektach nie komercyjnych, stąd szybko progresuję. Posiadam doświadczenie z technologiami takimi jak: react, typescript, sassy czy python. Znam również wiele innych przydatnych frameworków jak redux, react-router itd. Obecnie rozwijam sie w pisaniu testow(React Testing Library), zglebianiu GraphQL oraz Node.js/'a.",
+    privatelyHeader: 'Prywatnie',
+    privatelyDescriptionPart1:
+      'Moje życie prywatne nie odbiega bardzo od zawodowego. Czerpię życie pełnymi garściami. Lubię podróżować i chodzić po górach np. w ubiegłych latach wszedłem na ',
+    privatelyDescriptionRysy: 'Rysy',
+    privatelyDescriptionPart2: ' oraz przeszedłem pewien odcinek ',
+    privatelyDescriptionOrla: 'Orlej Perci',
+    privatelyDescriptionPart3:
+      '. Nauczyłem się podstaw gry na pianinie oraz tańca latino. Aktywnie uczę się języków. Na ten moment Ukraiński i Rosyjki, później planuję wznowić naukę języka Niemieckiego.',
+    footerText: 'Chętnie podejmę się kolejnych wyzwań',
+  },
+  footer: 'Stworzono na potrzeby portfolio. Prawa autorskie © zastrzeżone.',
+  notFound: 'Strona o podanym linku nie istnieje!',
+};
+
+const translationsRus = {
+  home: {
+    h1: 'Привет',
     h2: 'wiecej informacji o mnie oraz projekty',
     h3: 'znajdziesz klikajac ponizsze przyciski',
     h4: 'lub korzystajac z gornego menu',
