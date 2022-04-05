@@ -8,8 +8,20 @@ import warsawExpoApp from '../../images/projects/warsaw-expo-app.png';
 import expensesApp from '../../images/projects/expenses.png';
 import scrTaskApp from '../../images/projects/scrTask.png';
 import graphQL from '../../images/projects/graphQL.png';
+import railsToDo from '../../images/projects/Rails-todo-app.png';
 
 export const projectsData: ProjectDetailsType[] = [
+  {
+    technologiesShort: 'Html | Rails | Scss',
+    technologiesLong: 'Html | Rails | Scss | Haml',
+    imgPath: railsToDo,
+    imgAlt: 'To-Do',
+    projectName: 'To-Do-App',
+    codeHref: 'https://github.com/Karlos97/rails-todo-app',
+    liveHref: '',
+    show: false,
+    id: '990',
+  },
   {
     technologiesShort: 'React | React Testing Library | Typescript',
     technologiesLong:

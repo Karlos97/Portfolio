@@ -86,7 +86,9 @@ const ProjectDetails: React.FC<DetailsType & LanguageType> = ({
               className={classes['project-details-container-img']}
               src={imgPath}
               alt={imgAlt}
-              onClick={() => window.open(liveHref, '_blank')}
+              onClick={() =>
+                window.open(liveHref ? liveHref : codeHref, '_blank')
+              }
             />
           </div>
         </div>

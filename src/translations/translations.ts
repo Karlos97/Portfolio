@@ -12,6 +12,8 @@ const translationsEn = {
   },
   projects: {
     technologies: 'Technologies',
+    projectAboutId990:
+      'This is rails backend project. Page is showing To-Do app which has basics of to-do apps.',
     projectAboutId991:
       'Task is based on materials which comes from graphql documentation page. Page shows forum which uses most advantages of graphql query language.',
     projectAboutId992:
@@ -70,6 +72,8 @@ const translationsPl = {
   },
   projects: {
     technologies: 'Technologie',
+    projectAboutId990:
+      'Zadanie w peni backendowe oparte o railsy. Strona przedstawia klasyczna - prosta aplikacje To-Do.',
     projectAboutId991:
       "Zadanie oparte o materiały dostępne na stronie z dokumentacja graphql. Strona przedstawia forum, które wykorzystuje większość zalet graphql'a.",
     projectAboutId992:
