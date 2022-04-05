@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8e0bcb58.chunk.css",
-    "main.js": "/Portfolio/static/js/main.b13ea435.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.b13ea435.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.421bf6a0.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.421bf6a0.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.7cbe842b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.7cbe842b.js.map",
     "static/js/2.7dc63440.chunk.js": "/Portfolio/static/js/2.7dc63440.chunk.js",
@@ -11,6 +11,7 @@
     "static/css/main.8e0bcb58.chunk.css.map": "/Portfolio/static/css/main.8e0bcb58.chunk.css.map",
     "static/js/2.7dc63440.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.7dc63440.chunk.js.LICENSE.txt",
     "static/media/Poland.63742e8e.svg": "/Portfolio/static/media/Poland.63742e8e.svg",
+    "static/media/Rails-todo-app.432d4ea2.png": "/Portfolio/static/media/Rails-todo-app.432d4ea2.png",
     "static/media/UK.5aa2f382.svg": "/Portfolio/static/media/UK.5aa2f382.svg",
     "static/media/book-app.1bda632a.png": "/Portfolio/static/media/book-app.1bda632a.png",
     "static/media/expenses.dcd79eda.png": "/Portfolio/static/media/expenses.dcd79eda.png",
@@ -27,6 +28,6 @@
     "static/js/runtime-main.7cbe842b.js",
     "static/js/2.7dc63440.chunk.js",
     "static/css/main.8e0bcb58.chunk.css",
-    "static/js/main.b13ea435.chunk.js"
+    "static/js/main.421bf6a0.chunk.js"
   ]
 }
