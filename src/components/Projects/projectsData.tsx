@@ -9,13 +9,25 @@ import expensesApp from '../../images/projects/expenses.png';
 import scrTaskApp from '../../images/projects/scrTask.png';
 import graphQL from '../../images/projects/graphQL.png';
 import railsToDo from '../../images/projects/Rails-todo-app.png';
+import riddlesApp from '../../images/projects/riddles-app.jpg';
 
 export const projectsData: ProjectDetailsType[] = [
   {
-    technologiesShort: 'Html | Rails | Scss',
-    technologiesLong: 'Html | Rails | Scss | Haml',
+    technologiesShort: 'Html | NodeJs | MongoDB',
+    technologiesLong: 'Html | NodeJs | MongoDB | Bootstrap | Scss',
+    imgPath: riddlesApp,
+    imgAlt: 'Riddles App',
+    projectName: 'Riddles-App',
+    codeHref: 'https://github.com/Karlos97/riddles-app',
+    liveHref: 'https://nodejs-riddles-app.herokuapp.com',
+    show: false,
+    id: '989',
+  },
+  {
+    technologiesShort: 'Html | Rails | SQL',
+    technologiesLong: 'Html | Rails | SQL | Scss | Haml',
     imgPath: railsToDo,
-    imgAlt: 'To-Do',
+    imgAlt: 'To Do',
     projectName: 'To-Do-App',
     codeHref: 'https://github.com/Karlos97/rails-todo-app',
     liveHref: '',
